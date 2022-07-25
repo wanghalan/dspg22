@@ -1,5 +1,3 @@
-## Product Innovation
-
 _Summer 2022_
 
 The Product Innovation project is a proof-of-concept toolkit that aims to enable the [North
@@ -10,7 +8,7 @@ are then piped to natural language processing (NLP) modules that detect business
 and innovation status.
 
 ### Output
-Why does cloning no work? 
+Things seem to be working? Come here logo!
 
 ### Contact
 - [Alan Wang](alanwang@virginia.edu)
