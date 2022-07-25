@@ -2,8 +2,12 @@
 ---
 
 @import "{{ site.theme }}";
-body {
-      font-family: "Computer Modern", Times, serif;
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url("../fonts/ACaslonPro-Regular.otf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 #nav {
     position: relative;
