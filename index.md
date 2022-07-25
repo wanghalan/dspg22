@@ -9,6 +9,9 @@ source text extraction using open-source modules and browser automation. The col
 are then piped to natural language processing (NLP) modules that detect business, product,
 and innovation status.
 
+### Output
+...?
+
 ### Contact
 - [Alan Wang](alanwang@virginia.edu)
 - [Steve Zhou](wz8ry@virginia.edu)
