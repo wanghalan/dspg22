@@ -1,6 +1,8 @@
 ---
 ---
 
+$section-headings-color: #0086b3;
+
 @import "{{ site.theme }}";
 
 @font-face {
@@ -8,13 +10,14 @@
     src: url("../fonts/ACaslonPro-Regular.otf") format('truetype');
     font-weight: bold;
     font-style: normal;
-}
+};
+
 #nav {
     position: relative;
     background-color:#232D4B;
-}
+};
 
 body
 {
     font-family:"Computer Modern";
-}
+};
