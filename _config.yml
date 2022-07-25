@@ -1,4 +1,4 @@
-remote_theme: yaoeh/dspg22_minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes
 
 plugins:
   - jekyll-paginate
