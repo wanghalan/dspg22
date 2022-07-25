@@ -7,3 +7,5 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+
+logo: "https://raw.githubusercontent.com/yaoeh/dspg22_minimal-mistakes/master/assets/img/logo-white.png"
