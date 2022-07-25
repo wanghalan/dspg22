@@ -1,13 +1,5 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
-search: false
 ---
-
-@charset "utf-8";
-
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
-$section-headings-color: #232D4B;
 
 @import "{{ site.theme }}";
 
@@ -16,6 +8,11 @@ $section-headings-color: #232D4B;
     src: url("../fonts/ACaslonPro-Regular.otf") format('truetype');
     font-weight: bold;
     font-style: normal;
+};
+
+#nav {
+    position: relative;
+    background-color:#232D4B;
 };
 
 body
