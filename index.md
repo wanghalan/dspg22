@@ -1,5 +1,3 @@
-_Summer 2022_
-
 The Product Innovation project is a proof-of-concept toolkit that aims to enable the [North
 American Industry Classification System (NAICS)](https://www.census.gov/naics/#:~:text=The%20North%20American%20Industry%20Classification,to%20the%20U.S.%20business%20economy.) to track innovation activities sustainably using
 [opportunity data](https://hdsr.mitpress.mit.edu/pub/hnptx6lq/release/10). The toolkit accelerates [Really Simple Syndication (RSS)](https://en.wikipedia.org/wiki/RSS) queries and news
