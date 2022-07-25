@@ -20,3 +20,9 @@ body
     font-family:"Computer Modern";
     color: "#232D4B";
 };
+
+
+@import "{{ site.title }}";
+img {
+    src: ("../img/logo.png");
+}
