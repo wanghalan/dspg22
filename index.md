@@ -24,6 +24,6 @@ Things seem to be working? Come here logo!
 
 
 ## Contact
-- [Alan Wang](alanwang@virginia.edu)
-- [Steve Zhou](wz8ry@virginia.edu)
-- [Neil Kattampallil](nak3t@virginia.edu)
+- Alan Wang (alanwang@virginia.edu)
+- Steve Zhou (wz8ry@virginia.edu)
+- Neil Kattampallil (nak3t@virginia.edu)
