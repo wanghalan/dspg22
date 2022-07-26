@@ -11,7 +11,7 @@ plugins:
 title: "Summer 2022"
 logo: "https://raw.githubusercontent.com/yaoeh/dspg22_minimal-mistakes/master/assets/img/logo-white.png"
 repository: "yaoeh/dspg22_product-innovation"
-
+include: ["_pages"]
 defaults:
   # _pages
   - scope:
