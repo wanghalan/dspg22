@@ -1,3 +1,4 @@
+---
 title: Product Innovation
 layout: search
 toc: true
