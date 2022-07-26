@@ -1,4 +1,5 @@
 ---
+title: Summer 2022
 layout: single
 toc: true
 toc_sticky: true
