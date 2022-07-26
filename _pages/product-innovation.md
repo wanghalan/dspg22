@@ -1,7 +1,7 @@
 ---
 permalink: /product-innovation/
 title: Product Innovation
-layout: page
+layout: single
 toc: true
 toc_label: Product Innovation
 toc_sticky: true
