@@ -1,5 +1,6 @@
 ---
 title: "Product Innovation"
+layout: single
 toc: true
 toc_label: "Table of Contents"
 ---
