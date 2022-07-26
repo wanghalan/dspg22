@@ -1,7 +1,6 @@
 ---
-title: Product Innovation
-layout: search
 toc: true
+toc_label: "Product Innovation"
 ---
 
 The Product Innovation project is a proof-of-concept toolkit that aims to enable the [North
