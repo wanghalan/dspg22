@@ -1,5 +1,4 @@
 ---
-title: "Product Innovation"
 layout: single
 toc: true
 toc_sticky: true
