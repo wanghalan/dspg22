@@ -4,7 +4,7 @@ layout: single
 toc: true
 header:
   overlay_image: https://lucid.app/publicSegments/view/e1fac901-5124-444a-9fbd-d051a79b5469/image.png
-  overlay_filter: linear-gradient(rgba(229, 144, 0, 0.5), rgba(35, 45, 75, 0.5))
+  overlay_filter: linear-gradient(rgba(229, 144, 0, 0.5), rgba(255, 255, 255, 0.5))
 ---
 
 
