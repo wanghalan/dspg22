@@ -2,9 +2,6 @@
 title: "Product Innovation"
 layout: single
 toc: true
-header:
-  overlay_image: https://lucid.app/publicSegments/view/e1fac901-5124-444a-9fbd-d051a79b5469/image.png
-  overlay_filter: linear-gradient(rgba(229, 144, 0, 0.5), rgba(255, 255, 255, 0.5))
 ---
 
 
@@ -19,12 +16,14 @@ and innovation status.
 ## Introduction
 
 ## Method
-Things seem to be working? Come here logo!
+<img src="https://lucid.app/publicSegments/view/e1fac901-5124-444a-9fbd-d051a79b5469/image.png" alt="">
+We created two modules, the **rss-get** module, and the **news-get** module. We separate these because extracting information from news sites take a varying amount of time.
 
 ### Evaluation
+We utilize a set of pharmaceutical key words as found on the NAICS website.
 
 ## Results
-
+We extracted a set of source text and appended it to the url retrieved and made a dataset. Out of these urls, more than 80% of the data can be retrieved simply using ```get```.
 
 ## Contact
 - Alan Wang (alanwang@virginia.edu)
