@@ -1,7 +1,7 @@
 ---
-permalink: /product-innoation/
+permalink: /product-innovation/
 title: Product Innovation
-layout: single
+layout: page
 toc: true
 toc_label: Product Innovation
 toc_sticky: true
