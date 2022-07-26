@@ -1,4 +1,5 @@
 ---
+permalink: /product-innoation/
 title: Product Innovation
 layout: single
 toc: true
