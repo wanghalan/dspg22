@@ -12,10 +12,7 @@ Gary Andersen, National Center for Science and Engineering Statistics ([NCSES](h
 
 ## Abstract
 The Product Innovation project is a proof-of-concept toolkit that aims to track innovation activities sustainably using
-[opportunity data](https://hdsr.mitpress.mit.edu/pub/hnptx6lq/release/10). The toolkit accelerates [Really Simple Syndication (RSS)](https://en.wikipedia.org/wiki/RSS) queries and news
-source text extraction using open-source modules and browser automation. The collected texts
-are then piped to natural language processing (NLP) modules that detect business, product,
-and innovation status.
+[opportunity data](https://hdsr.mitpress.mit.edu/pub/hnptx6lq/release/10). The toolkit accelerates [Really Simple Syndication (RSS)](https://en.wikipedia.org/wiki/RSS) queries and news source text extraction using open-source modules and browser automation. The collected texts are then piped to natural language processing (NLP) modules that detect business, product, and innovation status.
 
 ## Introduction
 Project started with the idea the the NCSES has a Business Research and Discovery Innovation Survey (BRDIS) Survey. They wanted us to explore alternative sources of data, to complement the findings of the survey with possibly more detail such as the name of the innovative product. In the process of looking for this data source, we realized that most sources were impracticel and expensive to access. This sourcing of data becomes a challenge for most researchers, and we began to think about possible alternatives through which we can obtain data in a free and open-source way. During the 2022 summer of the DSPG internship, we were able to make some progress towards this aim.
