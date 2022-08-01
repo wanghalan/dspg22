@@ -87,8 +87,7 @@ The goal of the comparison is to elucidate common ways an extraction might fail.
 
 ### Keyword Mining
 Based on ```rss-get``` and the set of keywords, we extracted 6386 articles for 2017 phrama-related articles.
-
-[Plot of the articles per keywords here]
+<iframe src="../assets/fig/product-innovation_extracted-text.html" title="Extracted Text"></iframe>
 
 ### NLP
 Based on prior work from Neil, we did some things...
