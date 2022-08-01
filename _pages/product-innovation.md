@@ -21,7 +21,7 @@ Project started with the idea the the NCSES has a Business Research and Discover
 Previous works have used innovation indicators based on website information [[1]](#1)
 
 ## Method
-<img src="../_img/product-innovation_system-overview.svg" alt="Product innovation System Overview">
+<img src="/assets/product-innovation_system-overview.svg" alt="Product innovation System Overview">
 
 We created two modules, the **rss-get** module, and the **news-get** module. We separate these because extracting information from news sites take a varying amount of time.
 
@@ -92,5 +92,5 @@ The other steps to improve this system
 - Neil Kattampallil (nak3t@virginia.edu)
 
 ## References
-<a id="1">[1]</a> Axenbeck, Janna, and Patrick Breithaupt. "Innovation indicators based on firm websites—Which website characteristics predict firm-level innovation activity?." PloS one 16, no. 4 (2021): e0249583.
+- <a id="1">[1]</a> Axenbeck, Janna, and Patrick Breithaupt. "Innovation indicators based on firm websites—Which website characteristics predict firm-level innovation activity?." PloS one 16, no. 4 (2021): e0249583.
 ---
