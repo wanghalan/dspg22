@@ -43,23 +43,14 @@ There are various categories that a calculator have to take into consideration f
 
 #### Categories
 The categories in a calculator can be classified as
-
--Food
-
--Housing
-
--Transportation
-
--Child care
-
--Medical
-
--Miscellaneous
-
--Tax
-
--Credit
-
+- Food
+- Housing
+- Transportation
+- Child care
+- Medical
+- Miscellaneous
+- Tax
+- Credit
 
 The following picture shows the **Methodology Summary** of our proposed Cost of Living Calculator
 
