@@ -64,7 +64,7 @@ The goal of the comparison is to elucidate common ways an extraction might fail.
 
 |**Package**|**Article**|**Status**|**Notes**|
 |--|--|--|--|
-|Newspaper3k| bloomberg |<span style="color:red">Failed </span>| article.text returns a response: "Why did this happen? Please make sure your browser supports JavaScript and cookies and that you are not blocking them from loading. For more information you can review our Terms of Service and Cookie Policy." Likely additional work needs to be done in order to extract this data |
+|Newspaper3k| bloomberg |<span style="color:red">Failed </span>|Returns a response: "Why did this happen? Please make sure your browser supports JavaScript and cookies and that you are not blocking them from loading. For more information you can review our Terms of Service and Cookie Policy." Likely additional work needs to be done in order to extract this data |
 ||usatoday|<span style="color:green">Passed</span>|While the extraction has worked successfully, the parser cannot easily discern between the genuine article or the ads for different articles embedded|
 ||reuters|<span style="color:green">Passed</span>|Issue is the same as above; some ad text are still embedded, but the overall parser works relatively well|
 ||forbes|<span style="color:red">Failed</span>|Program quits with error: "failed with 403 Client Error: Max restarts limit reached for url"|
@@ -86,7 +86,7 @@ The goal of the comparison is to elucidate common ways an extraction might fail.
 ## Results
 
 ### Keyword Mining
-Based on ```rss-get``` and the set of keywords, we arrived a set of the following articles:
+Based on ```rss-get``` and the set of keywords, we extracted 6386 articles for 2017 phrama-related articles.
 
 [Plot of the articles per keywords here]
 
