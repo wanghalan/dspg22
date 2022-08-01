@@ -23,7 +23,7 @@ Previous works have used innovation indicators based on website information [^1]
 [^1]: Axenbeck, Janna, and Patrick Breithaupt. "Innovation indicators based on firm websites—Which website characteristics predict firm-level innovation activity?." PloS one 16, no. 4 (2021): e0249583.
 
 ## Method
-<img src="/assets/img/product-innovation_system-overview.svg" alt="Product innovation System Overview">
+![Product innovation System Overview](../assets/img/product-innovation_system-overview.svg)
 
 We created two modules, the **rss-get** module, and the **news-get** module. We separate these because extracting information from news sites take a varying amount of time.
 
@@ -32,13 +32,13 @@ To find rss feeds, we looked towards some of the most popular search engines wit
 
 |**Source**|**Type**|**Keyword**|**Snippet**|**Notes**|
 |--|--|--|--|--|
-|[Google](https://news.google.com/rss/search?q={0})|Search Engine|Y|Y|<ul><li>Successful RSS keyword extraction using: https://news.google.com/rss/search?q={0}</li><li>Column _summary_detail.value_ might contain one sentence description of the news</li></ul>|
-|[Bing](https://www.bing.com/news/search?q={0}&format=rss)|Search Engine|Y|Y|<ul><li>Successful RSS keyword extraction using: https://www.bing.com/news/search?q={0}&format=rss</li><li>Column _summary_detail.value_ might contain 2-3 sentences of the news </li></ul>|
-|[Baidu](?)|Search Engine|N|N|<ul><li>We found a website https://www.baidu.com/search/rss.html that seems to describe the existance of rss functioning. However, upon clicking into the keyword search field, I kept being returned the same news in non-RSS format</li></ul>|
-|[Yahoo News](https://news.yahoo.com/rss)|News Channel|N|N|<ul><li>Does not seem to allow keyword searches. If you do a yahoo search with news it automatically returns search.yahoo.com.</li><li>You can manipulate the [URL](https://news.search.yahoo.com/search;_ylt=A2KIbMuIVJpipzUAhiNXNyoA;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA3Nj?p={KEYWORD}&fr=news) to do news page sources, but it does not seem like they will convert it into an RSS format for us </li></ul>
-|[Yandex](https://yandex.com/)|Search Engine|N|N|<ul><li>robots.txt disallows /company/*.rss, /company/search. Returns results in Russian?</li><li>Upon searching [sitemaps](https://yandex.com/support/sitemap.xml), found an rss source at [https://zen.yandex.ru/](https://zen.yandex.ru/search?query={0}). However, to subscribe to any of the feeds require signing in</li></ul>|
-|[Ask](https://www.ask.com/rss)|Search Engine|N|Y| <ul><li> Found https://www.ask.com/rss, but so far haven't found a way to add a keyword. </li> <li> Looked through: https://www.ask.com/sitemap_index.xml and https://www.ask.com/robots.txt but did not find anything rss-related</li><li>Column _metadescription_ contains 2 sentences </ul>|
-|[ABC News](https://abcnews.go.com)|General Media|Y|N|<ul><li>Does not have usable rss feed. Web scraping with keyword search is possible, but most of the content seems to be videos without transcript.</li></ul>
+|[Google](https://news.google.com/rss/search?q={0})|Search Engine|<span style="color:green">Y</span>|<span style="color:green">Y</span>|<ul><li>Successful RSS keyword extraction using: https://news.google.com/rss/search?q={0}</li><li>Column _summary_detail.value_ might contain one sentence description of the news</li></ul>|
+|[Bing](https://www.bing.com/news/search?q={0}&format=rss)|Search Engine|<span style="color:green">Y</span>|<span style="color:green">Y</span>|<ul><li>Successful RSS keyword extraction using: https://www.bing.com/news/search?q={0}&format=rss</li><li>Column _summary_detail.value_ might contain 2-3 sentences of the news </li></ul>|
+|[Baidu](?)|Search Engine|<span style="color:red">N</span>|<span style="color:red">N</span>|<ul><li>We found a website https://www.baidu.com/search/rss.html that seems to describe the existance of rss functioning. However, upon clicking into the keyword search field, I kept being returned the same news in non-RSS format</li></ul>|
+|[Yahoo News](https://news.yahoo.com/rss)|News Channel|<span style="color:red">N</span>|<span style="color:red">N</span>|<ul><li>Does not seem to allow keyword searches. If you do a yahoo search with news it automatically returns search.yahoo.com.</li><li>You can manipulate the [URL](https://news.search.yahoo.com/search;_ylt=A2KIbMuIVJpipzUAhiNXNyoA;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA3Nj?p={KEYWORD}&fr=news) to do news page sources, but it does not seem like they will convert it into an RSS format for us </li></ul>
+|[Yandex](https://yandex.com/)|Search Engine|<span style="color:red">N</span>|<span style="color:red">N</span>|<ul><li>robots.txt disallows /company/*.rss, /company/search. Returns results in Russian?</li><li>Upon searching [sitemaps](https://yandex.com/support/sitemap.xml), found an rss source at [https://zen.yandex.ru/](https://zen.yandex.ru/search?query={0}). However, to subscribe to any of the feeds require signing in</li></ul>|
+|[Ask](https://www.ask.com/rss)|Search Engine|<span style="color:red">N</span>|<span style="color:green">Y</span>| <ul><li> Found https://www.ask.com/rss, but so far haven't found a way to add a keyword. </li> <li> Looked through: https://www.ask.com/sitemap_index.xml and https://www.ask.com/robots.txt but did not find anything rss-related</li><li>Column _metadescription_ contains 2 sentences </ul>|
+|[ABC News](https://abcnews.go.com)|General Media|<span style="color:green">Y</span>|<span style="color:red">N</span>|<ul><li>Does not have usable rss feed. Web scraping with keyword search is possible, but most of the content seems to be videos without transcript.</li></ul>
 ---
 
 ### Source Text Extraction
