@@ -17,6 +17,9 @@ The Product Innovation project is a proof-of-concept toolkit that aims to track 
 ## Introduction
 Project started with the idea the the NCSES has a Business Research and Discovery Innovation Survey (BRDIS) Survey. They wanted us to explore alternative sources of data, to complement the findings of the survey with possibly more detail such as the name of the innovative product. In the process of looking for this data source, we realized that most sources were impracticel and expensive to access. This sourcing of data becomes a challenge for most researchers, and we began to think about possible alternatives through which we can obtain data in a free and open-source way. During the 2022 summer of the DSPG internship, we were able to make some progress towards this aim.
 
+## Background
+Previous works have used innovation indicators based on website information [[1]](#1)
+
 ## Method
 <img src="../_img/product-innovation_system-overview.svg" alt="Product innovation System Overview">
 
@@ -88,4 +91,6 @@ The other steps to improve this system
 - Steve Zhou (wz8ry@virginia.edu)
 - Neil Kattampallil (nak3t@virginia.edu)
 
+## References
+<a id="1">[1]</a> Axenbeck, Janna, and Patrick Breithaupt. "Innovation indicators based on firm websites—Which website characteristics predict firm-level innovation activity?." PloS one 16, no. 4 (2021): e0249583.
 ---
