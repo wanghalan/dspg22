@@ -28,7 +28,7 @@ Previous works have used innovation indicators based on website information [^1]
 We created two modules, the **rss-get** module, and the **news-get** module. We separate these because extracting information from news sites take a varying amount of time.
 
 ### Search Engine Comparison
-To find rss feeds, we looked towards some of the most popular search engines with the following three criteria: 1) the search engine should have keyword search capabilities, 2) the rss should return a sentence snippet, and 3) the engine would allow search by time range. We compiled the results of our search in following table:
+RSS, or Really Simple Syndication, is a standardized and computer-readable format that contains detailed information of each piece of content that a website publishes. To find reliable and consistent sources of RSS feeds, we looked towards some of the most popular search engines with the following three criteria: 1) the search engine should have keyword search capabilities, 2) the RSS should return a sentence snippet, and 3) the engine would allow search by time range. We compiled the results of our search in following table:
 
 |**Source**|**Type**|**Keyword**|**Snippet**|**Time Range**|**Notes**|
 |--|--|--|--|--|--|
