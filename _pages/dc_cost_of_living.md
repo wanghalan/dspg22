@@ -29,6 +29,10 @@ They are
 - MIT living Wage Calculator
 - Washington Self Sufficiency (CFWW)
 
+We analyzed data sources in each calculator and ound the best source
+
+We took those differnet sources, merged them and we proposed a new calculator
+
 ### Our Sources
 
 Something here
