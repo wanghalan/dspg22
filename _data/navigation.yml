@@ -1,19 +1,19 @@
 projs:
-  - title: Getting Started
+  - title: Projects
     children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
+      - title: "Product Innovation"
+        url: /dspg22/product-innovation/
+      - title: "Data Commons : Cost of Living and Food Insecurity"
+        url: /dspg22/dc_cost_of_living/
       - title: "Installation"
         url: /docs/installation/
       - title: "Upgrading"
         url: /docs/upgrading/
 
-  - title: Customization
+  - title: DSPG 2022
     children:
-      - title: "Configuration"
-        url: /docs/configuration/
+      - title: "About the Program"
+        url: https://biocomplexity.virginia.edu/institute/divisions/social-and-decision-analytics/dspg
       - title: "Navigation"
         url: /docs/navigation/
       - title: "UI Text"
