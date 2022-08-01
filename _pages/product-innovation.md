@@ -18,10 +18,12 @@ The Product Innovation project is a proof-of-concept toolkit that aims to track 
 Project started with the idea the the NCSES has a Business Research and Discovery Innovation Survey (BRDIS) Survey. They wanted us to explore alternative sources of data, to complement the findings of the survey with possibly more detail such as the name of the innovative product. In the process of looking for this data source, we realized that most sources were impracticel and expensive to access. This sourcing of data becomes a challenge for most researchers, and we began to think about possible alternatives through which we can obtain data in a free and open-source way. During the 2022 summer of the DSPG internship, we were able to make some progress towards this aim.
 
 ## Background
-Previous works have used innovation indicators based on website information [[1]](#1)
+Previous works have used innovation indicators based on website information [^1]. 
+
+[^1]: Axenbeck, Janna, and Patrick Breithaupt. "Innovation indicators based on firm websites—Which website characteristics predict firm-level innovation activity?." PloS one 16, no. 4 (2021): e0249583.
 
 ## Method
-<img src="/assets/product-innovation_system-overview.svg" alt="Product innovation System Overview">
+<img src="/assets/img/product-innovation_system-overview.svg" alt="Product innovation System Overview">
 
 We created two modules, the **rss-get** module, and the **news-get** module. We separate these because extracting information from news sites take a varying amount of time.
 
@@ -43,9 +45,7 @@ To find rss feeds, we looked towards some of the most popular search engines wit
 Once we found a rss-feed search the avails us keywords and snippets, we realized that the snippets we find are mostly 1-2 sentences, which is less than the 3 we hoped that would allow us to run the Natural Language Processing (NLP) more effectively. As a result, we started to investigate the retrieval of source text directly.
 
 #### Text Summarizer Comparison
-In order to see which summarizers are the most effective, we manually checked a sample of the following news articles[^1]: [bloomberg](https://www.bloomberg.com/news/newsletters/2022-06-07/apple-s-troubles-in-china-aren-t-going-away-quickly), [usatoday](https://www.usatoday.com/story/tech/2022/06/06/wwdc-22-apple-pay-buy-now-pay-later/7534225001/), [reuters](https://www.reuters.com/markets/stocks/australias-bnpl-stocks-wilt-after-apple-announces-entry-2022-06-07/), [forbes](https://www.forbes.com/sites/davidphelan/2022/05/13/apple-iphone-15-insider-leaks-astonishing-design-change/), [appleinsider](https://appleinsider.com/articles/22/05/15/ios-16-will-have-refreshed-apple-apps-but-look-the-same).
-
-[^1]: Note that since websites are updated frequently, it is possible that by the time you reference the articles above they are no longer there or in the same state as when we accessed them.
+In order to see which summarizers are the most effective, we manually checked a sample of the following news articles: [bloomberg](https://www.bloomberg.com/news/newsletters/2022-06-07/apple-s-troubles-in-china-aren-t-going-away-quickly), [usatoday](https://www.usatoday.com/story/tech/2022/06/06/wwdc-22-apple-pay-buy-now-pay-later/7534225001/), [reuters](https://www.reuters.com/markets/stocks/australias-bnpl-stocks-wilt-after-apple-announces-entry-2022-06-07/), [forbes](https://www.forbes.com/sites/davidphelan/2022/05/13/apple-iphone-15-insider-leaks-astonishing-design-change/), [appleinsider](https://appleinsider.com/articles/22/05/15/ios-16-will-have-refreshed-apple-apps-but-look-the-same).
 
 For the following extractors:
   - [Newspaper3k](https://github.com/codelucas/newspaper), "News, full-text, and article metadata extraction in Python 3"
@@ -91,6 +91,4 @@ The other steps to improve this system
 - Steve Zhou (wz8ry@virginia.edu)
 - Neil Kattampallil (nak3t@virginia.edu)
 
-## References
-- <a id="1">[1]</a> Axenbeck, Janna, and Patrick Breithaupt. "Innovation indicators based on firm websites—Which website characteristics predict firm-level innovation activity?." PloS one 16, no. 4 (2021): e0249583.
 ---
