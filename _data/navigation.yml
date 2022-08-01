@@ -1,15 +1,32 @@
-main:
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
-  - title: "Posts"
-    url: /year-archive/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "Pages"
-    url: /page-archive/
-  - title: "Collections"
-    url: /collection-archive/
-  - title: "External Link"
-    url: https://google.com
+projs:
+  - title: Projects
+    children:
+      - title: "Product Innovation"
+        url: /dspg22/product-innovation/
+      - title: "Data Commons : Cost of Living"
+        url: /dspg22/dc_cost_of_living/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Upgrading"
+        url: /docs/upgrading/
+
+  - title: DSPG 2022
+    children:
+      - title: "About the Program"
+        url: https://biocomplexity.virginia.edu/institute/divisions/social-and-decision-analytics/dspg
+      - title: "Symposium 2022"
+        url: https://biocomplexity.virginia.edu/event/data-science-public-good-symposium-2022
+      - title: "UVA Biocomplexity Institute"
+        url: https://biocomplexity.virginia.edu/
+      - title: "Social and Decision Analytics Division"
+        url: https://biocomplexity.virginia.edu/institute/divisions/social-and-decision-analytics
+
+  - title: Work With Us
+    children:
+      - title: "Opportunities for Students"
+        url: https://biocomplexity.virginia.edu/uva-our-shared-vision/experiential-learning
+      - title: "Careers at the Institute"
+        url: https://biocomplexity.virginia.edu/work-us
+      - title: "Collaborate with Us"
+        url: https://biocomplexity.virginia.edu/institute/our-partners-and-sponsors
+        
