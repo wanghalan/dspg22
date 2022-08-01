@@ -33,6 +33,8 @@ We analyzed data sources in each calculator and ound the best source
 
 We took those differnet sources, merged them and we proposed a new calculator
 
+![Our Approach](assets/img/Methods.png)
+
 ### Our Sources
 
 Something here
