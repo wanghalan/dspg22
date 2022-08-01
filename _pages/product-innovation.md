@@ -17,7 +17,7 @@ The Product Innovation project is a proof-of-concept toolkit that aims to track 
 [opportunity data](https://hdsr.mitpress.mit.edu/pub/hnptx6lq/release/10). The toolkit accelerates [Really Simple Syndication (RSS)](https://en.wikipedia.org/wiki/RSS) queries and news source text extraction using open-source modules and browser automation. The collected texts are then piped to natural language processing (NLP) modules that detect business, product, and innovation status.
 
 ## Introduction
-The goal of our project was to explore the feasibility of complimenting the NCSES [Business Research and Discovery Innovation Survey (BRDIS) Survey](https://www.nsf.gov/statistics/srvyindustry/about/brdis/interpret.cfm) with alternative data sources. Since traditional innovation indicators such a patents and questionnaire-based surveys can suffer from a lack of timeliness, granularity, and coverage [^1], we looked towards complementing the survey findings with information from opportunity data on the web. During our search, however, we realized that it was not trivial to obtain this text data in a free and open-source way. Our contribute this summer by creating an example framework for researchers to readily extract news text.
+The goal of our project was to explore the feasibility of complimenting the NCSES [Business Research and Discovery Innovation Survey (BRDIS) Survey](https://www.nsf.gov/statistics/srvyindustry/about/brdis/interpret.cfm) with alternative data sources. Since traditional innovation indicators such a patents and questionnaire-based surveys can suffer from a lack of timeliness, granularity, and coverage [^1], we looked towards complementing the survey findings with information from opportunity data on the web. During our search, however, we realized that it was not trivial to obtain this text data in a free and open-source way. We contribute this summer by creating an example framework for researchers to extract news text.
 
 ## Background
 Several prior works have utilized website text as a means to track innovation. For example, Axenbeck and Breihaupt found that text features on websites make the biggest contribution to their innovation prediction performance for their sample of over 4,000 German firms [^2]. Similarly,... 
@@ -81,13 +81,13 @@ The goal of the comparison is to elucidate common ways an extraction might fail.
 ||appleinsider|<span style="color:red">Failed</span>|No text retrieved. Possibly identified the wrong element so no effective sentence found within|
 ---
 
-
-
 ## Results
 
-### Keyword Mining
-Based on ```rss-get``` and the set of keywords, we extracted 6386 articles for 2017 phrama-related articles.
-<iframe src="../assets/fig/product-innovation_extracted-text.html" title="Extracted Text"></iframe>
+### Source Text Extraction
+Using keywords on pharmaceuticals extracted from the NACIS, we used ```rss-get``` to retrieve aset of keywords and we extracted 6386 articles for 2017 phrama-related articles.
+
+![Extracted articles per keyword](../assets/fig/product-innovation_extracted-text.html)
+
 
 ### NLP
 Based on prior work from Neil, we did some things...
