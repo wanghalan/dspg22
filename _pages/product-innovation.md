@@ -46,11 +46,19 @@ To find rss feeds, we looked towards some of the most popular search engines wit
 ### Source Text Extraction
 Once we found a rss-feed search the avails us keywords and snippets, we realized that the snippets we find are mostly 1-2 sentences, which is less than the 3 we hoped that would allow us to run the Natural Language Processing (NLP) more effectively. As a result, we started to investigate the retrieval of source text directly.
 
-#### Text Summarizer Comparison
-In order to see which summarizers are the most effective, we manually checked a sample of the following news articles: [bloomberg](https://www.bloomberg.com/news/newsletters/2022-06-07/apple-s-troubles-in-china-aren-t-going-away-quickly), [usatoday](https://www.usatoday.com/story/tech/2022/06/06/wwdc-22-apple-pay-buy-now-pay-later/7534225001/), [reuters](https://www.reuters.com/markets/stocks/australias-bnpl-stocks-wilt-after-apple-announces-entry-2022-06-07/), [forbes](https://www.forbes.com/sites/davidphelan/2022/05/13/apple-iphone-15-insider-leaks-astonishing-design-change/), [appleinsider](https://appleinsider.com/articles/22/05/15/ios-16-will-have-refreshed-apple-apps-but-look-the-same). For the following extractors:
-  - [Newspaper3k](https://github.com/codelucas/newspaper), "News, full-text, and article metadata extraction in Python 3"
-  - [Article Parser](https://github.com/myifeng/article-parser), "Extract article or news by url or html, parse the title and content, output in markdown format"
-  - [Sumy](https://github.com/miso-belica/sumy), "Simple library and command line utility for extracting summary from HTML pages or plain texts"
+#### Severity Levels
+As we collected source text, we realized that news sources have a varying degree of "friendliness" to being scraped. In other words, some websites intentionally resist source text from being extracted. We introduced the concept of _severity_ to our system so that we can navigate spending more computational power in order to access these more difficult websites. 
+
+|**Severity**|**Definition**|**Example**|
+|--|--|--|
+|0| The website source text can be extracted using just http-get |?|
+|1| The website source text can be extracted using an automated without additional add-ons |?|
+|2| The website source text cannot be extracted using severity 0 or 1 (i.e., additional work is needed to gain access to the information)|appleinsider|
+
+During our search, however, we found that more than 80% of the websites are retrievable using severity 0. To not cause undue burden to the content hosts, we did our evaluation of the system using only severity 0 source text. 
+
+#### News Article Parser Comparison
+Using Python, we searched for open source article parsers ([Newspaper3k](https://github.com/codelucas/newspaper),[Article Parser](https://github.com/myifeng/article-parser),[Sumy](https://github.com/miso-belica/sumy))  and we manually checked a sample of the news articles to elucidate common ways an extraction might fail. We used the following articles: [bloomberg](https://www.bloomberg.com/news/newsletters/2022-06-07/apple-s-troubles-in-china-aren-t-going-away-quickly), [usatoday](https://www.usatoday.com/story/tech/2022/06/06/wwdc-22-apple-pay-buy-now-pay-later/7534225001/), [reuters](https://www.reuters.com/markets/stocks/australias-bnpl-stocks-wilt-after-apple-announces-entry-2022-06-07/), [forbes](https://www.forbes.com/sites/davidphelan/2022/05/13/apple-iphone-15-insider-leaks-astonishing-design-change/), [appleinsider](https://appleinsider.com/articles/22/05/15/ios-16-will-have-refreshed-apple-apps-but-look-the-same).
 
 The goal of the comparison is to elucidate common ways an extraction might fail. We summarize our lessons below:
 
@@ -74,16 +82,6 @@ The goal of the comparison is to elucidate common ways an extraction might fail.
 ---
 
 
-#### Severity Levels
-During our investigation, we realized that news sources have a varying degree of "friendliness" to being scraped. In other words, some websites intentionally resist source text from being extracted. We introduced the concept of _severity_ to our system so that we can navigate spending more computational power in order to access these more difficult websites. 
-
-|**Severity**|**Definition**|**Example**|
-|--|--|--|
-|0| The website source text can be extracted using just http-get |?|
-|1| The website source text can be extracted using an automated without additional add-ons |?|
-|2| The website source text cannot be extracted using severity 0 or 1 (i.e., additional work is needed to gain access to the information)|appleinsider|
-
-During our search, however, we found that more than 80% of the websites are retrievable using severity 0. To not cause undue burden to the content hosts, we did our evaluation of the system using only severity 0 source text. 
 
 ## Results
 
