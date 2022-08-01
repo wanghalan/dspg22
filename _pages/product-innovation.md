@@ -17,10 +17,10 @@ The Product Innovation project is a proof-of-concept toolkit that aims to track 
 [opportunity data](https://hdsr.mitpress.mit.edu/pub/hnptx6lq/release/10). The toolkit accelerates [Really Simple Syndication (RSS)](https://en.wikipedia.org/wiki/RSS) queries and news source text extraction using open-source modules and browser automation. The collected texts are then piped to natural language processing (NLP) modules that detect business, product, and innovation status.
 
 ## Introduction
-The goal of our project was to explore the feasibility of complimenting the NCSES Business Research and Discovery Innovation Survey (BRDIS) Survey with alternative data sources. Since traditional innovation indicators such a patents and questionnaire-based surveys can suffer from a lack of timeliness, granularity, and coverage [^1], we looked towards complementing the survey findings with information from opportunity data on the web. During our search, however, we realized that it was not trivial to obtain this text data in a free and open-source way.
+The goal of our project was to explore the feasibility of complimenting the NCSES Business Research and Discovery Innovation Survey (BRDIS) Survey with alternative data sources. Since traditional innovation indicators such a patents and questionnaire-based surveys can suffer from a lack of timeliness, granularity, and coverage [^1], we looked towards complementing the survey findings with information from opportunity data on the web. During our search, however, we realized that it was not trivial to obtain this text data in a free and open-source way. Our aim for this summer became then to create a framework for researchers to readily access news text.
 
 ## Background
-Several prior works have utilized website text as a means to track innovation. For example, Axenbeck and Breihaupt found that text features on websites make the biggest contribution to their innovation prediction performance for their sample of over 4,000 German firms [^2]. Similarly, 
+Several prior works have utilized website text as a means to track innovation. For example, Axenbeck and Breihaupt found that text features on websites make the biggest contribution to their innovation prediction performance for their sample of over 4,000 German firms [^2]. Similarly,... 
 
 [^1]: Kinne, Jan, and Janna Axenbeck. "Web mining for innovation ecosystem mapping: a framework and a large-scale pilot study." Scientometrics 125, no. 3 (2020): 2011-2041.
 [^2]: Axenbeck, Janna, and Patrick Breithaupt. "Innovation indicators based on firm websites—Which website characteristics predict firm-level innovation activity?." PloS one 16, no. 4 (2021): e0249583.
@@ -62,11 +62,17 @@ The goal of the comparison is to elucidate common ways an extraction might fail.
 
 
 #### Severity Levels
-During our investigation, we realized that news sources have a varying degree of "friendliness" to being scraped. In other words, some websites intentionally resist source text from being extracted. We introduced the concept of _severity_ to our system so that we can navigate spending more computational power in order to access these more difficult websites. For example, articles of the lowest severity level can be extracted by simply using HTTP GEt, while articles of a higher severity text extraction require using [Selenium](https://www.selenium.dev/) to automate a browser and wait for specific CSS signatures to access the website. During our search, however, we found that more than 80% of the websites are retrievable using the lowest severity level. To not cause undue burden to the content hosts, we did our evaluation of the system using only severity 0 source text. 
+During our investigation, we realized that news sources have a varying degree of "friendliness" to being scraped. In other words, some websites intentionally resist source text from being extracted. We introduced the concept of _severity_ to our system so that we can navigate spending more computational power in order to access these more difficult websites. 
 
+|**Severity**|**Definition**|**Example**|
+|--|--|--|
+|0| The website source text can be extracted using just http-get |?|
+|1| The website source text can be extracted using an automated without additional add-ons |?|
+|2| The website source text cannot be extracted using severity 1 or 2|appleinsider|
 
-## Evaluation
-In order to evaluate our methods, we mind a set a pharmaceutical keywords directly from the NAICS website.
+During our search, however, we found that more than 80% of the websites are retrievable using severity 0. To not cause undue burden to the content hosts, we did our evaluation of the system using only severity 0 source text. 
+
+## Results
 
 ### Keyword Mining
 Based on ```rss-get``` and the set of keywords, we arrived a set of the following articles:
@@ -76,16 +82,19 @@ Based on ```rss-get``` and the set of keywords, we arrived a set of the followin
 ### NLP
 Based on prior work from Neil, we did some things...
 
-## Results
-We extracted a set of source text and appended it to the url retrieved and made a dataset. Out of these urls, more than 80% of the data can be retrieved simply using [http get](https://www.w3schools.com/tags/ref_httpmethods.asp).
+### Multi-threading and speed-ups
+We implemented an example multi-threaded pipeline to extract data from each website without making too many queries to a website as once. (Insert Steve Figure here)
 
-## Future Work
-The other steps to improve this system
-
-## Broader Impacts
+## Discussions
 - News articles are rich sources of data that with the rise of natural language models, can be used to benefit government organizations?
 - Allow for opportunity data in the form of news to be accessible to researchers
 - Encourages research reproducibility
+
+## Limitations and Future Works
+- Write about how severity is difficult
+- Write about sometimes needing to use VPN to not get black-listed by websites
+- Searching for a way to compare with a ground-truth metric
+- ,etc.
 
 ## Contact
 - Alan Wang (ahw9f@virginia.edu)
