@@ -3,7 +3,7 @@ projs:
     children:
       - title: "Product Innovation"
         url: /dspg22/product-innovation/
-      - title: "Data Commons : Cost of Living and Food Insecurity"
+      - title: "Data Commons : Cost of Living"
         url: /dspg22/dc_cost_of_living/
       - title: "Installation"
         url: /docs/installation/
@@ -14,31 +14,19 @@ projs:
     children:
       - title: "About the Program"
         url: https://biocomplexity.virginia.edu/institute/divisions/social-and-decision-analytics/dspg
-      - title: "Navigation"
-        url: /docs/navigation/
-      - title: "UI Text"
-        url: /docs/ui-text/
-      - title: "Authors"
-        url: /docs/authors/
-      - title: "Layouts"
-        url: /docs/layouts/
+      - title: "Symposium 2022"
+        url: https://biocomplexity.virginia.edu/event/data-science-public-good-symposium-2022
+      - title: "UVA Biocomplexity Institute"
+        url: https://biocomplexity.virginia.edu/
+      - title: "Social and Decision Analytics Division"
+        url: https://biocomplexity.virginia.edu/institute/divisions/social-and-decision-analytics
 
-  - title: Content
+  - title: Work With Us
     children:
-      - title: "Working with Posts"
-        url: /docs/posts/
-      - title: "Working with Pages"
-        url: /docs/pages/
-      - title: "Working with Collections"
-        url: /docs/collections/
-      - title: "Helpers"
-        url: /docs/helpers/
-      - title: "Utility Classes"
-        url: /docs/utility-classes/
-
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/
+      - title: "Opportunities for Students"
+        url: https://biocomplexity.virginia.edu/uva-our-shared-vision/experiential-learning
+      - title: "Careers at the Institute"
+        url: https://biocomplexity.virginia.edu/work-us
+      - title: "Collaborate with Us"
+        url: https://biocomplexity.virginia.edu/institute/our-partners-and-sponsors
+        
