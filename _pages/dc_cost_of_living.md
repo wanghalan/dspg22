@@ -74,10 +74,21 @@ A PUMA, or Public Use Microdata Area, is the aggregation of numerous census trac
 | $200,000 or more     | 415  | 251  | 223  | 84   | 52   | 0    | 18   | 1043  |
 | TOTAL                | 986  | 384  | 309  | 113  | 67   | 20   | 27   | 1906  |
 
-### Examples from Fairfax County, VA
+### Real-world Examples
 
-Following the three
+Combining the IPF result and the cost of living calculated in previous section, we can estimate the proportion of households facing or at risk of food insecurity in each census tract. To continue with the example of census tract 51.059.4922.01, in which the cost of living is
 
+| Household size     | HH1    | HH2    | HH3     | HH4     | HH5     | HH6     | HH7     |
+| ------------------ | ------ | ------ | ------- | ------- | ------- | ------- | ------- |
+| Annual cost in USD | 51,532 | 83,456 | 117,473 | 150,888 | 172,162 | 186,675 | 199,703 |
+
+We consider all households of size 1 making less than \$49,999 a year as food insecure, and in need of government help, and since \$51,532 falls in the category of \$50,000 to \$74,999, we consider households in this category as in risk of food insecurity. In this way, we reach the following table as the conclusion of food insecurity estimations for census tract 51.059.4922.01.
+| Status of insecurity | count | percentage |
+| ------------------------ | ---- | ---- |
+| Food Insecure HH         | 264  | 14%  |
+| Food Insecure plus At-Risk HH | 337  | 18%  |
+| No Food Insecure HH      | 1569 | 82%  |
+| Total                    | 1906 | 100% |
 ## Evaluation of results
 
 Caveats, implications, etc.
