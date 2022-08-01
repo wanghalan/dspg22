@@ -64,15 +64,15 @@ The goal of the comparison is to elucidate common ways an extraction might fail.
 
 |**Package**|**Article**|**Status**|**Notes**|
 |--|--|--|--|
-|Newspaper3k| bloomberg |<span style="color:red">Failed </span>| article.text returns a response: "Why did this happen? Please make sure your browser supports JavaScript and cookies and that you are not blocking them from loading. For more information you can review our Terms of Service and Cookie Policy." Likely additional work needs to be done in order to extract this data |
+|Newspaper3k| bloomberg |<span style="color:red">Failed </span>|Returns a response: "Why did this happen? Please make sure your browser supports JavaScript and cookies and that you are not blocking them from loading. For more information you can review our Terms of Service and Cookie Policy." Likely additional work needs to be done in order to extract this data |
 ||usatoday|<span style="color:green">Passed</span>|While the extraction has worked successfully, the parser cannot easily discern between the genuine article or the ads for different articles embedded|
 ||reuters|<span style="color:green">Passed</span>|Issue is the same as above; some ad text are still embedded, but the overall parser works relatively well|
 ||forbes|<span style="color:red">Failed</span>|Program quits with error: "failed with 403 Client Error: Max restarts limit reached for url"|
 ||appleinsider|<span style="color:green">Passed</span>|Works as expected.|
 |Article Parser|bloomberg|<span style="color:red">Failed</span>|JavaScript we required. Selenium is needed to scrap bloomberg|
-||usatoday|Passed|Between-paragraph links are included|
-||reuters|Passed|Side-bar and between-paragraph ads are included|
-||forbes|Passed|Between-paragraph links are included|
+||usatoday|<span style="color:green">Passed</span>|Between-paragraph links are included|
+||reuters|<span style="color:green">Passed</span>|Side-bar and between-paragraph ads are included|
+||forbes|<span style="color:green">Passed</span>|Between-paragraph links are included|
 ||appleinsider|<span style="color:red">Failed</span>|Failed to identify the main article. Parsed a side-bar link instead|
 |Sumy|bloomberg|<span style="color:red">Failed</span>|Blocked by not-a-robot test|
 ||usatoday|<span style="color:green">Passed</span>|Kept only a fresh text, no links or ad prompts. BUT, any sentence containing a link is removed|
@@ -86,7 +86,7 @@ The goal of the comparison is to elucidate common ways an extraction might fail.
 ## Results
 
 ### Keyword Mining
-Based on ```rss-get``` and the set of keywords, we arrived a set of the following articles:
+Based on ```rss-get``` and the set of keywords, we extracted 6386 articles for 2017 phrama-related articles.
 
 [Plot of the articles per keywords here]
 
