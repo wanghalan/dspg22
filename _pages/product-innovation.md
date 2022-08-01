@@ -1,6 +1,6 @@
 ---
 permalink: /product-innovation/
-title: Product 
+title: Product Innovation
 
 layout: single
 toc: true
