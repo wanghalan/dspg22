@@ -34,10 +34,11 @@ We analyzed data sources in each calculator and found out the best source
 We took those different sources, merged them and proposed a new calculator
 
 </center>![Our Process](assets/img/Methods.png){width = 40%}</center>
+
 </center>![](assets/img/COL.png){width =40%}</center></center>
 
 ### Our Sources
-There are differenet categories that a calculator have to take into consideration for estimating the Cost of living in a particular area. 
+There are various categories that a calculator have to take into consideration for estimating the Cost of living in a particular area. 
 
 #### Categories
 The categories in a calculator can be classified as
@@ -73,8 +74,7 @@ The following picture shows the **Methodology Summary** of our proposed Cost of 
 
 ### Examples from Fairfax County, VA
 
-Something here
-
+We took three **cesus tracts** from the Fairfax county and tried to calculate the cost of living for a number of hosueholds  and calculated who are food insecure according to our cost of living calculator. We tried it out with various combinations of households ranging from HH1 to HH7.
 ## Application with Food Insecurity
 
 something here
