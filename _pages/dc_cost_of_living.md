@@ -33,9 +33,9 @@ We analyzed data sources in each calculator and found out the best source
 
 We took those different sources, merged them and proposed a new calculator
 
-</center>![Our Process](assets/img/Methods.png){width = 40%}</center>
+</center>![Our Process](../assets/img/Methods.png){width = 40%}</center>
 
-</center>![](assets/img/COL.png){width =40%}</center></center>
+</center>![](../assets/img/COL.png){width =40%}</center></center>
 
 ### Our Sources
 There are various categories that a calculator have to take into consideration for estimating the Cost of living in a particular area. 
@@ -62,7 +62,7 @@ The categories in a calculator can be classified as
 
 The following picture shows the **Methodology Summary** of our proposed Cost of Living Calculator
 
-</center>![](assets/img/MethodologySummary.png){width = 40%}</center>
+</center>![](../assets/img/MethodologySummary.png){width = 40%}</center>
 
 -Our Methodology Summary provides information about various categories present in a cost of living calculator with a description of their **calculation** process
 
