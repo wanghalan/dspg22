@@ -24,6 +24,7 @@ We created two modules, the **rss-get** module, and the **news-get** module. We 
 
 ### Search Engine Comparison
 To find rss feeds, we looked towards some of the most popular search engines with the following two criteria: 1) the search engine should have keyword search capabilities, and 2) the rss should return a sentence snippet. We compiled the results of our search in following table:
+
 |**Source**|**Type**|**Keyword**|**Snippet**|**Notes**|
 |--|--|--|--|--|
 |[Google](https://news.google.com/rss/search?q={0})|Search Engine|Y|Y|<ul><li>Successful RSS keyword extraction using: https://news.google.com/rss/search?q={0}</li><li>Column _summary_detail.value_ might contain one sentence description of the news</li></ul>|
@@ -49,6 +50,7 @@ For the following extractors:
   - [Sumy](https://github.com/miso-belica/sumy), "Simple library and command line utility for extracting summary from HTML pages or plain texts"
 
 The goal of the comparison is to elucidate common ways an extraction might fail more than using them as a metric for the efficacy of our extractor. We summarize our lessons below:
+
 |**Package**|**Article**|**Status**|**Notes**|
 |--|--|--|--|
 |Newspaper3k| bloomberg | <span style="color:red"> Failed </span>| article.text returns a response: "Why did this happen? Please make sure your browser supports JavaScript and cookies and that you are not blocking them from loading. For more information you can review our Terms of Service and Cookie Policy." Likely additional work needs to be done in order to extract this data |
@@ -85,3 +87,5 @@ The other steps to improve this system
 - Alan Wang (ahw9f@virginia.edu)
 - Steve Zhou (wz8ry@virginia.edu)
 - Neil Kattampallil (nak3t@virginia.edu)
+
+---
