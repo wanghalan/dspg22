@@ -70,9 +70,9 @@ The goal of the comparison is to elucidate common ways an extraction might fail.
 ||forbes|<span style="color:red">Failed</span>|Program quits with error: "failed with 403 Client Error: Max restarts limit reached for url"|
 ||appleinsider|<span style="color:green">Passed</span>|Works as expected.|
 |Article Parser|bloomberg|<span style="color:red">Failed</span>|JavaScript we required. Selenium is needed to scrap bloomberg|
-||usatoday|Passed|Between-paragraph links are included|
-||reuters|Passed|Side-bar and between-paragraph ads are included|
-||forbes|Passed|Between-paragraph links are included|
+||usatoday|<span style="color:green">Passed</span>|Between-paragraph links are included|
+||reuters|<span style="color:green">Passed</span>|Side-bar and between-paragraph ads are included|
+||forbes|<span style="color:green">Passed</span>|Between-paragraph links are included|
 ||appleinsider|<span style="color:red">Failed</span>|Failed to identify the main article. Parsed a side-bar link instead|
 |Sumy|bloomberg|<span style="color:red">Failed</span>|Blocked by not-a-robot test|
 ||usatoday|<span style="color:green">Passed</span>|Kept only a fresh text, no links or ad prompts. BUT, any sentence containing a link is removed|
