@@ -22,8 +22,12 @@ Local communities have data on policies, strategies, events, and social behavior
 One important section of our data commons is the proportion of households at risk of food insecurity in each region. To make a reliable estimation of households at risk, we need a trustworthy calculator for the cost of living in each corresponding region. To account for sub-county level variations in cost of living, the geographic resolution we target is at census-tract level. According to the [U.S. Census Bureau](https://www.census.gov/programs-surveys/geography/about/glossary.html#par_textimage_13), a census tract is 
 
 ### Comparisons of Existing Calculators
+We started our process by comparing three cost of living calculators.
 
-Something here
+They are
+- Ecoconmic Policy institute(EPI)
+- MIT living Wage Calculator
+_ Washing Self Sufficiency (CFWW)
 
 ### Our Sources
 
