@@ -23,10 +23,5 @@ defaults:
     values:
       layout: single
       author_profile: false
-  # _projs
-  - scope:
-      path: ""
-      type: projs
-    values:
       sidebar:
         nav: "projs"
