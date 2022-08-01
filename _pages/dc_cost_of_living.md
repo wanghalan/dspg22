@@ -34,7 +34,7 @@ We analyzed data sources in each calculator and found out the best source
 
 We took those different sources, merged them and proposed a new calculator
 
-</center>![Our Process](assets/img/Methods.png){width = 40%}</center>
+</center>![Our Process](../assets/img/Methods.png){width = 40%}</center>
 
 </center>![](assets/img/COL.png){width =40%}</center></center>
 
