@@ -27,7 +27,7 @@ We started our process by comparing three cost of living calculators.
 They are
 - Economic Policy institute(EPI)
 - MIT living Wage Calculator
-_ Washing Self Sufficiency (CFWW)
+- Washington Self Sufficiency (CFWW)
 
 ### Our Sources
 
