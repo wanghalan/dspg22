@@ -12,6 +12,9 @@ title: "Summer 2022"
 logo: "https://raw.githubusercontent.com/yaoeh/dspg22_minimal-mistakes/master/assets/img/logo-white.png"
 repository: "yaoeh/dspg22"
 include: ["_pages"]
+# reference https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll
+# Needed GFM in order to render tables
+markdown: GFM 
 defaults:
   # _pages
   - scope:
