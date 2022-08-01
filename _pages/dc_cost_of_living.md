@@ -30,16 +30,14 @@ They are
 - MIT living Wage Calculator
 - Washington Self Sufficiency (CFWW)
 
-We analyzed data sources in each calculator and found out the best source
-
-We took those different sources, merged them and proposed a new calculator
+We analyzed data sources in each calculator and found out the best source, then took those different sources, merged them and proposed a new calculator
 
 <div class="row">
     <div class="container">
-        <img src="../assets/img/Methods.png" alt="Our process" style="float: left; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
+        <img src="../assets/img/calculator_methods.png" alt="process" style="float: left; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
     </div>
     <div class="container">
-        <img src="../assets/img/COL.png" alt="sources" style="float: left; width: 48%; margin-right: 1%; margin-bottom: 0.5em;">
+        <img src="../assets/img/calculator_midterm_sources.png" alt="sources" style="float: left; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
     </div>
 </div>
 <div style="clear:both;"></div>
