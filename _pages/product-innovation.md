@@ -49,11 +49,11 @@ Once we found a rss-feed search the avails us keywords and snippets, we realized
 #### Severity Levels
 As we collected source text, we realized that news sources have a varying degree of "friendliness" to being scraped. In other words, some websites intentionally resist source text from being extracted. We introduced the concept of _severity_ to our system so that we can navigate spending more computational power in order to access these more difficult websites. 
 
-|**Severity**|**Definition**|**Example**|
-|--|--|--|
-|0| The website source text can be extracted using just http-get |?|
-|1| The website source text can be extracted using an automated without additional add-ons |?|
-|2| The website source text cannot be extracted using severity 0 or 1 (i.e., additional work is needed to gain access to the information)|appleinsider|
+|**Severity**|**Definition**|
+|--|--|
+|0| The website source text can be extracted using just http-get |
+|1| The website source text can be extracted using an automated without additional add-ons |
+|2| The website source text cannot be extracted using severity 0 or 1 (i.e., additional work is needed to gain access to the information)|
 
 During our search, however, we found that more than 80% of the websites are retrievable using severity 0. To not cause undue burden to the content hosts, we did our evaluation of the system using only severity 0 source text. 
 
