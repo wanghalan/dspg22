@@ -1,6 +1,6 @@
 ---
+title: "Data Commons | Cost of Living and Food Insecurity"
 permalink: /dc_cost_of_living/
-title: Data Commons | Cost of Living and Food Insecurity
 layout: single
 ---
 
@@ -25,7 +25,7 @@ One important section of our data commons is the proportion of households at ris
 We started our process by comparing three cost of living calculators.
 
 They are
-- Ecoconmic Policy institute(EPI)
+- Economic Policy institute(EPI)
 - MIT living Wage Calculator
 _ Washing Self Sufficiency (CFWW)
 
