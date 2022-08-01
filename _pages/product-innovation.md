@@ -17,7 +17,7 @@ The Product Innovation project is a proof-of-concept toolkit that aims to track 
 [opportunity data](https://hdsr.mitpress.mit.edu/pub/hnptx6lq/release/10). The toolkit accelerates [Really Simple Syndication (RSS)](https://en.wikipedia.org/wiki/RSS) queries and news source text extraction using open-source modules and browser automation. The collected texts are then piped to natural language processing (NLP) modules that detect business, product, and innovation status.
 
 ## Introduction
-The goal of our project was to explore the feasibility of complimenting the NCSES [Business Research and Discovery Innovation Survey (BRDIS) Survey](https://www.nsf.gov/statistics/srvyindustry/about/brdis/interpret.cfm) with alternative data sources. Since traditional innovation indicators such a patents and questionnaire-based surveys can suffer from a lack of timeliness, granularity, and coverage [^1], we looked towards complementing the survey findings with information from opportunity data on the web. During our search, however, we realized that it was not trivial to obtain this text data in a free and open-source way. Our aim for this summer became then to create a framework for researchers to readily access news text.
+The goal of our project was to explore the feasibility of complimenting the NCSES [Business Research and Discovery Innovation Survey (BRDIS) Survey](https://www.nsf.gov/statistics/srvyindustry/about/brdis/interpret.cfm) with alternative data sources. Since traditional innovation indicators such a patents and questionnaire-based surveys can suffer from a lack of timeliness, granularity, and coverage [^1], we looked towards complementing the survey findings with information from opportunity data on the web. During our search, however, we realized that it was not trivial to obtain this text data in a free and open-source way. Our contribute this summer by creating an example framework for researchers to readily extract news text.
 
 ## Background
 Several prior works have utilized website text as a means to track innovation. For example, Axenbeck and Breihaupt found that text features on websites make the biggest contribution to their innovation prediction performance for their sample of over 4,000 German firms [^2]. Similarly,... 
@@ -64,21 +64,21 @@ The goal of the comparison is to elucidate common ways an extraction might fail.
 
 |**Package**|**Article**|**Status**|**Notes**|
 |--|--|--|--|
-|Newspaper3k| bloomberg | <span style="color:red"> Failed </span>| article.text returns a response: "Why did this happen? Please make sure your browser supports JavaScript and cookies and that you are not blocking them from loading. For more information you can review our Terms of Service and Cookie Policy." Likely additional work needs to be done in order to extract this data |
-||usatoday|Passed|While the extraction has worked successfully, the parser cannot easily discern between the genuine article or the ads for different articles embedded|
-||reuters|Passed|Issue is the same as above; some ad text are still embedded, but the overall parser works relatively well|
-||forbes|<span style="color:red"> Failed </span>|Program quits with error: "failed with 403 Client Error: Max restarts limit reached for url"|
-||appleinsider|Passed|Works as expected.|
-|Article Parser|bloomberg|<span style="color:red"> Failed </span>|JavaScript we required. Selenium is needed to scrap bloomberg|
+|Newspaper3k| bloomberg |<span style="color:red">Failed </span>| article.text returns a response: "Why did this happen? Please make sure your browser supports JavaScript and cookies and that you are not blocking them from loading. For more information you can review our Terms of Service and Cookie Policy." Likely additional work needs to be done in order to extract this data |
+||usatoday|<span style="color:green">Passed</span>|While the extraction has worked successfully, the parser cannot easily discern between the genuine article or the ads for different articles embedded|
+||reuters|<span style="color:green">Passed</span>|Issue is the same as above; some ad text are still embedded, but the overall parser works relatively well|
+||forbes|<span style="color:red">Failed</span>|Program quits with error: "failed with 403 Client Error: Max restarts limit reached for url"|
+||appleinsider|<span style="color:green">Passed</span>|Works as expected.|
+|Article Parser|bloomberg|<span style="color:red">Failed</span>|JavaScript we required. Selenium is needed to scrap bloomberg|
 ||usatoday|Passed|Between-paragraph links are included|
 ||reuters|Passed|Side-bar and between-paragraph ads are included|
 ||forbes|Passed|Between-paragraph links are included|
-||appleinsider|<span style="color:red"> Failed </span>|Failed to identify the main article. Parsed a side-bar link instead|
-|Sumy|bloomberg|<span style="color:red"> Failed </span>|Blocked by not-a-robot test|
-||usatoday|Passed|Kept only a fresh text, no links or ad prompts. BUT, any sentence containing a link is removed|
-||reuters|Passed|All texts are preserved, and no links mixed in the text. Between-paragraph ads are however also kept|
-||forbes|Passed|All text are preserved with url content removed. Ads are partially removed but still mixed within|
-||appleinsider|<span style="color:red"> Failed </span>|No text retrieved. Possibly identified the wrong element so no effective sentence found within|
+||appleinsider|<span style="color:red">Failed</span>|Failed to identify the main article. Parsed a side-bar link instead|
+|Sumy|bloomberg|<span style="color:red">Failed</span>|Blocked by not-a-robot test|
+||usatoday|<span style="color:green">Passed</span>|Kept only a fresh text, no links or ad prompts. BUT, any sentence containing a link is removed|
+||reuters|<span style="color:green">Passed</span>|All texts are preserved, and no links mixed in the text. Between-paragraph ads are however also kept|
+||forbes|<span style="color:green">Passed</span>|All text are preserved with url content removed. Ads are partially removed but still mixed within|
+||appleinsider|<span style="color:red">Failed</span>|No text retrieved. Possibly identified the wrong element so no effective sentence found within|
 ---
 
 
