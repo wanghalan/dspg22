@@ -34,11 +34,18 @@ We analyzed data sources in each calculator and found out the best source
 
 We took those different sources, merged them and proposed a new calculator
 
-</center>![Our Process](../assets/img/Methods.png){width = 40%}</center>
-
-</center>![](../assets/img/COL.png){width =40%}</center></center>
+<div class="row">
+    <div class="container">
+        <img src="../assets/img/Methods.png" alt="Our process" style="float: left; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
+    </div>
+    <div class="container">
+        <img src="../assets/img/COL.png" alt="sources" style="float: left; width: 48%; margin-right: 1%; margin-bottom: 0.5em;">
+    </div>
+</div>
+<div style="clear:both;"></div>
 
 ### Our Sources
+
 There are various categories that a calculator have to take into consideration for estimating the Cost of living in a particular area. 
 
 #### Categories
@@ -65,7 +72,7 @@ The following table shows the **Methodology Summary** of our proposed Cost of Li
 | Tax            | Taxes include federal and state income tax, payroll taxes (Social Security), and state and local sales taxes where applicable. | IRS, VA Dept. Taxation                 | UWashington-SSS                            | County |
 | Credit         | Federal tax credits including the Earned Income Tax Credit, the Child and Dependent Care Tax Credit, and the Child Tax Credit and applicable state tax credits | IRS, VA Dept. Taxation                 | UWashington-SSS                            | County |
 
-Note
+Note:
 
 - **Source** section indicates the **data source** 
 
