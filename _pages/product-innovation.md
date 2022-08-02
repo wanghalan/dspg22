@@ -14,13 +14,13 @@ Gary Andersen, National Center for Science and Engineering Statistics ([NCSES](h
 
 ## Abstract
 The Product Innovation project is a proof-of-concept toolkit that aims to track innovation activities sustainably using
-[opportunity data](https://hdsr.mitpress.mit.edu/pub/hnptx6lq/release/10). The toolkit accelerates [Really Simple Syndication (RSS)](https://en.wikipedia.org/wiki/RSS) queries and news source text extraction using open-source modules and browser automation. The collected texts are then piped to natural language processing (NLP) modules that detect business, product, and innovation status.
+[opportunity data](https://hdsr.mitpress.mit.edu/pub/hnptx6lq/release/10). The toolkit accelerates [Really Simple Syndication (RSS)](https://en.wikipedia.org/wiki/RSS) queries and news source text extraction using open-source modules and browser automation. We then applied natural language processing (NLP) to analyze the collected texts to detect business, product, and innovation status.
 
 ## Introduction
-The goal of our project was to explore the feasibility of complimenting the NCSES [Business Research and Discovery Innovation Survey (BRDIS) Survey](https://www.nsf.gov/statistics/srvyindustry/about/brdis/interpret.cfm) with alternative data sources. Since traditional innovation indicators such a patents and questionnaire-based surveys can suffer from a lack of timeliness, granularity, and coverage [^1], we looked towards complementing the survey findings with information from opportunity data on the web. During our search, however, we realized that it was not trivial to obtain this text data in a free and open-source way. We contribute this summer by creating an example framework for researchers to extract news text.
+The goal of our project was to explore the feasibility of complementing the NCSES [Business Research and Discovery Innovation Survey (BRDIS) Survey](https://www.nsf.gov/statistics/srvyindustry/about/brdis/interpret.cfm) with alternative data sources. Since traditional innovation indicators, such as patents and questionnaire-based surveys, can suffer from a lack of timeliness, granularity, and coverage [^1], we looked towards complementing the survey findings with information from opportunity data on the web. During our search, however, we realized that it was not trivial to obtain this text data in a free and open-source way. We contribute this summer by creating an example framework for researchers to extract news text.
 
-## Background
-Several prior works have utilized website text as a means to track innovation. For example, Axenbeck and Breihaupt found that text features on websites make the biggest contribution to their innovation prediction performance for their sample of over 4,000 German firms [^2]. Similarly,... 
+## Related Works
+Several prior works have utilized website text as a means to track innovation. For example, Axenbeck and Breihaupt found that text features on websites make the biggest contribution to their innovation prediction performance for over 4,000 German firms [^2]. 
 
 [^1]: Kinne, Jan, and Janna Axenbeck. "Web mining for innovation ecosystem mapping: a framework and a large-scale pilot study." Scientometrics 125, no. 3 (2020): 2011-2041.
 [^2]: Axenbeck, Janna, and Patrick Breithaupt. "Innovation indicators based on firm websites—Which website characteristics predict firm-level innovation activity?." PloS one 16, no. 4 (2021): e0249583.
@@ -88,6 +88,13 @@ Using keywords on pharmaceuticals extracted from the NACIS, we used ```rss-get``
 
 [![Article per keyword figure](../assets/img/extracted_text.svg)](../assets/fig/product-innovation_extracted-text.html)
 
+Note the 100 article max that is associated with each keyword. To learn more about the particulars of the google rss search queries, we recommend this article [^3].
+
+[^3]: https://newscatcherapi.com/blog/google-news-rss-search-parameters-the-missing-documentaiton
+
+### Comparison of the different text extraction modules
+- Include snippets from each model?
+
 ### NLP
 Based on prior work from Neil, we did some things...
 
@@ -100,12 +107,16 @@ We implemented an example multi-threaded pipeline to extract data from each webs
 - Encourages research reproducibility
 
 ## Limitations and Future Works
+(Other challenges here)
+- Advertising incoporated in article text
+  - Sumy ignores text with links in it
+- Junk text from form fields
 - Write about how severity is difficult
 - Write about sometimes needing to use VPN to not get black-listed by websites
 - Searching for a way to compare with a ground-truth metric
-- ,etc.
 
-## Contact
+## Team
+(add face pictures)
 - Alan Wang (ahw9f@virginia.edu)
 - Steve Zhou (wz8ry@virginia.edu)
 - Neil Kattampallil (nak3t@virginia.edu)
