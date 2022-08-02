@@ -50,6 +50,9 @@ Once we found a rss-feed search the avails us keywords and snippets, we realized
 #### Severity Levels
 As we collected source text, we realized that news sources have a varying degree of "friendliness" to being scraped. In other words, some websites intentionally resist source text from being extracted. We introduced the concept of _severity_ to our system so that we can navigate spending more computational power in order to access these more difficult websites. 
 
+![Bloomberg ads](../assets/img/bloomberg_diffcult.png)
+*An example news article that embeds advertisement text directly with the source text*
+
 |**Severity**|**Definition**|
 |--|--|
 |0| The website source text can be extracted using just http-get |
