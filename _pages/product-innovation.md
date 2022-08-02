@@ -98,7 +98,10 @@ Note the 100 article max that is associated with each keyword. To learn more abo
 - Include snippets from each model?
 
 ### NLP
-Based on prior work from Neil, we did some things...
+Based on prior work done by the lab, including our process of [building supervised classification models](https://www.methodspace.com/blog/novelty-in-the-news-detecting-innovation-with-machine-learning)  through [BERT based Language models](https://ieeexplore.ieee.org/document/9483744) using human-labeled training sets, we have an existing model that can be used to predict whether or not a news article is about a new, innovative product.
+Once we extract the innovation-related articles from the dataset, we can apply the techniques of [Named Entity Recognition](https://en.wikipedia.org/wiki/Named-entity_recognition) and [Question Answering](https://en.wikipedia.org/wiki/Question_answering) to extract specific pieces of information from the article text.
+
+Our objective in building this news extraction tool is to create a free and open source way to obtain article data for the analysis of specific industries, in a way that can neatly integrate with our existing NLP pipeline.
 
 ## Discussions
 - News articles are rich sources of data that with the rise of natural language models, can be used to benefit government organizations?
