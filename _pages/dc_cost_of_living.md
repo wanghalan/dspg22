@@ -27,60 +27,40 @@ Local communities have data on policies, strategies, events, and social behavior
 One important section of our data commons is the proportion of households at risk of food insecurity in each region. To make a reliable estimation of households at risk, we need a trustworthy calculator for the cost of living in each corresponding region. A cost-of-living adjustment is important because it allows employees, retirees and people living on fixed incomes to afford housing, goods, services and taxes as prices increase over time.The cost of living is often used to compare how expensive it is to live in one city versus another. To account for sub-county level variations in cost of living, the geographic resolution we target is at census-tract level. According to the [U.S. Census Bureau](https://www.census.gov/programs-surveys/geography/about/glossary.html#par_textimage_13), a census tract is 
 
 ### Comparisons of Existing Calculators
-We started our process by comparing three cost of living calculators
+We started our process by comparing three existing cost of living calculators:
 
-They are
-- Economic Policy institute(EPI)
-- MIT living Wage Calculator
-- Washington Self Sufficiency (CFWW)
+- [Economic Policy Institute (EPI) Family Budget Calculator](https://www.epi.org/resources/budget/)
+- [MIT Living Wage Calculator](https://livingwage.mit.edu/)
+- [University of Washington Self Sufficiency Standard Calculator](https://selfsufficiencystandard.org/calculator/)
 
-We analyzed data sources in each calculator and found out the best source, then took those different sources, merged them and proposed a new calculator
+We analyzed data sources in each calculator and conducted comparative studies in each category. Among them, the methodology of the Washington Self Sufficiency Standard calculator was deemed the most suitable for our project. Nevertheless, it does not provide down to census-tract level numbers and has some data sources outdated. Therefore, after a series of evaluation, we concluded that if we want a precise estimate of the cost of living at census tract level, we would have to adopt some of their proposed sources and compile our own calculator.
 
+<center>
 <div class="row">
     <div class="container">
-        <img src="../assets/img/calculator_methods.png" alt="process" style="float: center; width: 85%; margin-right: 1%; margin-bottom: 0.5em;">
+        <img src="../assets/img/calculator_methods.png" alt="process" style="float: center; width: 60%; margin-right: 1%; margin-bottom: 0.5em;">
     </div>
     <div class="container">
-        <img src="../assets/img/calculator_midterm_sources.png" alt="sources" style="float: center; width: 95%; margin-right: 1%; margin-bottom: 0.5em;">
+        <img src="../assets/img/calculator_midterm_sources.png" alt="sources" style="float: center; width: 60%; margin-right: 1%; margin-bottom: 0.5em;">
     </div>
 </div>
 <div style="clear:both;"></div>
+</center>
 
 ### Our Sources
 
-There are various categories that a calculator have to take into consideration for estimating the Cost of living in a particular area. 
+There are various categories that a calculator have to take into consideration for estimating the cost of living in a particular area. We identified 7 key components for the cost of living: food, housing, transportation, child care, health care, other necessities (miscellaneous), and tax (including tax credits). After weeks of comparing the pros and cons of different sources and approaches to estimate, we come up with the following table that shows the **Methodology Summary** of our proposed Cost of Living Calculator.
 
-#### Categories
-The categories in a calculator can be classified as
-- Food
-- Housing
-- Transportation
-- Child care
-- Medical
-- Miscellaneous
-- Tax
-- Credit
-
-The following table shows the **Methodology Summary** of our proposed Cost of Living Calculator
-
-| Category       | Description                                                  | Source                                 | Level  |
-| -------------- | ------------------------------------------------------------ | -------------------------------------- | ------ |
-| Food           | USDA low-cost plan in May 2022, adjusted for regional variation by Feeding America Map the Meal Gap per-meal cost data 2020. | USDA, Feeding America                  | County |
-| Housing        | HUD Fair Market Rates from FY21-22 (40th Percentile), then adjusted by housing inflation index for past fiscal year (5,8% for housing). | HUD, BLS                               | ZIP    |
-| Transportation | Estimation based on three components: auto ownership, auto use, and transit use. It uses information from ACS (means of transportation to work, vehicles at home) | Centre for Neighborhood Technology     | Tract  |
-| Child Care     | Market-rate costs from the 75th percentile and estimated by the Virginia Department of Social Services, by categories: age, geography and type of facility. | Virginia Department of Social Services | County |
-| Medical        | Acquire through UWashington-SSS calculator: state-level premium from Medical Expenditure Panel Survey (MEPS), mapped to county level by HHS Qualified Health Plan Marketplace price. MEPS  data for state-wise out-of-pocket expenses | MEPS, HHS                              | County |
-| Miscellaneous  | Validated with the  Consumer Expenditure Survey data, we estimate other expenses as 10% of  spending on other necessities. Other figures: National Research Council, 15% -25% of cost on food and shelter. | 10% of of others                       | Tract  |
-| Tax            | Taxes include federal and state income tax, payroll taxes (Social Security), and state and local sales taxes where applicable. | IRS, VA Dept. Taxation                 | County |
-| Credit         | Federal tax credits including the Earned Income Tax Credit, the Child and Dependent Care Tax Credit, and the Child Tax Credit and applicable state tax credits | IRS, VA Dept. Taxation                 | County |
-
-Note:
-
-- **Source** section indicates the **data source** 
-
-- **User** section indicates which calculator uses that source
-
-- **Level** of data indicates level of the data like county, tract or zip code level. 
+| Category       | Description                                                  | Source                                 | Geo resolution |
+| -------------- | ------------------------------------------------------------ | -------------------------------------- | -------------- |
+| Food           | USDA low-cost plan in May 2022, adjusted for regional variation by Feeding America Map the Meal Gap per-meal cost data 2020. | USDA, Feeding America                  | County         |
+| Housing        | HUD Fair Market Rates from FY21-22 (40th Percentile), then adjusted by housing inflation index for past fiscal year (5,8% for housing). | HUD, BLS                               | ZIP            |
+| Transportation | Estimation based on three components: auto ownership, auto use, and transit use. It uses information from ACS (means of transportation to work, vehicles at home) | Centre for Neighborhood Technology     | Tract          |
+| Child Care     | Market-rate costs from the 75th percentile and estimated by the Virginia Department of Social Services, by categories: age, geography and type of facility. | Virginia Department of Social Services | County         |
+| Medical        | Acquire through UWashington-SSS calculator: state-level premium from Medical Expenditure Panel Survey (MEPS), mapped to county level by HHS Qualified Health Plan Marketplace price. MEPS  data for state-wise out-of-pocket expenses | MEPS, HHS                              | County         |
+| Miscellaneous  | Validated with the  Consumer Expenditure Survey data, we estimate other expenses as 10% of  spending on other necessities. Other figures: National Research Council, 15% -25% of cost on food and shelter. | 10% of of others                       | Tract          |
+| Tax            | Taxes include federal and state income tax, payroll taxes (Social Security), and state and local sales taxes where applicable. | IRS, VA Dept. Taxation                 | County         |
+| Credit         | Federal tax credits including the Earned Income Tax Credit, the Child and Dependent Care Tax Credit, and the Child Tax Credit and applicable state tax credits | IRS, VA Dept. Taxation                 | County         |
 
 ### Examples from Fairfax County, VA
 
