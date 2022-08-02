@@ -85,7 +85,7 @@ The goal of the comparison is to elucidate common ways an extraction might fail.
 ## Results
 
 ### Source Text Extraction
-Using keywords on pharmaceuticals extracted from the NACIS, we used ```rss-get``` to retrieve aset of keywords and we extracted 6386 articles for 2017 phrama-related articles.
+Using [keywords on pharmaceuticals extracted from the NACIS](https://www.naics.com/naics-code-description/?code=325411), we used ```rss-get``` to retrieve aset of keywords and we extracted 6386 articles for 2017 phrama-related articles.
 
 [![Article per keyword figure](../assets/img/extracted_text.svg)](../assets/fig/product-innovation_extracted-text.html)
 
@@ -115,16 +115,14 @@ Our objective in building this news extraction tool is to create a free and open
 - Encourages research reproducibility
 
 ## Limitations and Future Works
-(Other challenges here)
 - Advertising incoporated in article text
   - Sumy ignores text with links in it
 - Junk text from form fields
-- Write about how severity is difficult
-- Write about sometimes needing to use VPN to not get black-listed by websites
+- Severity 2 is difficult and not sustainable
+- Black-listed by the website
 - Searching for a way to compare with a ground-truth metric
 
 ## Team
-(add face pictures)
 - Alan Wang (ahw9f@virginia.edu)
 - Steve Zhou (wz8ry@virginia.edu)
 - Neil Kattampallil (nak3t@virginia.edu)
