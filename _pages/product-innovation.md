@@ -94,7 +94,7 @@ Note the 100 article max that is associated with each keyword. To learn more abo
 [^5]: https://newscatcherapi.com/blog/google-news-rss-search-parameters-the-missing-documentaiton
 
 ### Comparison of severity
-We used a random sample of 500 urls from the 9000 urls we pulled from the most **rss-get** and tested severity 0 and severity 1 results and compiled the following table. 
+We used a random sample of 500 URLs from the 9000 URLs we pulled from the most **rss-get**, tested severity zero and severity one results, and compiled the following table.
 
 |**Severity Level**|**Running Time**|**Articles/Second**|**Success Rate**|
 |--|--|--|--|
