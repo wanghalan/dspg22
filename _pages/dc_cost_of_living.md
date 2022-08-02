@@ -2,6 +2,10 @@
 title: "Data Commons | Cost of Living and Food Insecurity"
 permalink: /dc_cost_of_living/
 layout: single
+
+toc: true
+toc_label: Cost of Living
+toc_sticky: true
 ---
 
 ## Stakeholder(s)
@@ -59,16 +63,16 @@ The categories in a calculator can be classified as
 
 The following table shows the **Methodology Summary** of our proposed Cost of Living Calculator
 
-| Category       | Description                                                  | Source                                 | User                                       | Level  |
-| -------------- | ------------------------------------------------------------ | -------------------------------------- | ------------------------------------------ | ------ |
-| Food           | USDA low-cost plan in May 2022, adjusted for regional variation by Feeding America Map the Meal Gap per-meal cost data 2020. | USDA, Feeding America                  | UWashington-SSS, Economic Policy Institute | County |
-| Housing        | HUD Fair Market Rates from FY21-22 (40th Percentile), then adjusted by housing inflation index for past fiscal year (5,8% for housing). | HUD, BLS                               | MIT, UWashington-SSS, EPI                  | ZIP    |
-| Transportation | Estimation based on three components: auto ownership, auto use, and transit use. It uses information from ACS (means of transportation to work, vehicles at home) | Centre for Neighborhood Technology     | EPI                                        | Tract  |
-| Child Care     | Market-rate costs from the 75th percentile and estimated by the Virginia Department of Social Services, by categories: age, geography and type of facility. | Virginia Department of Social Services | UWashington-SSS                            | County |
-| Medical        | Acquire through UWashington-SSS calculator: state-level premium from Medical Expenditure Panel Survey (MEPS), mapped to county level by HHS Qualified Health Plan Marketplace price. MEPS  data for state-wise out-of-pocket expenses | MEPS, HHS                              | UWashington-SSS                            | County |
-| Miscellaneous  | Validated with the  Consumer Expenditure Survey data, we estimate other expenses as 10% of  spending on other necessities. Other figures: National Research Council, 15% -25% of cost on food and shelter. | 10% of of others                       | UWashington-SSS                            | Tract  |
-| Tax            | Taxes include federal and state income tax, payroll taxes (Social Security), and state and local sales taxes where applicable. | IRS, VA Dept. Taxation                 | UWashington-SSS                            | County |
-| Credit         | Federal tax credits including the Earned Income Tax Credit, the Child and Dependent Care Tax Credit, and the Child Tax Credit and applicable state tax credits | IRS, VA Dept. Taxation                 | UWashington-SSS                            | County |
+| Category       | Description                                                  | Source                                 | Level  |
+| -------------- | ------------------------------------------------------------ | -------------------------------------- | ------ |
+| Food           | USDA low-cost plan in May 2022, adjusted for regional variation by Feeding America Map the Meal Gap per-meal cost data 2020. | USDA, Feeding America                  | County |
+| Housing        | HUD Fair Market Rates from FY21-22 (40th Percentile), then adjusted by housing inflation index for past fiscal year (5,8% for housing). | HUD, BLS                               | ZIP    |
+| Transportation | Estimation based on three components: auto ownership, auto use, and transit use. It uses information from ACS (means of transportation to work, vehicles at home) | Centre for Neighborhood Technology     | Tract  |
+| Child Care     | Market-rate costs from the 75th percentile and estimated by the Virginia Department of Social Services, by categories: age, geography and type of facility. | Virginia Department of Social Services | County |
+| Medical        | Acquire through UWashington-SSS calculator: state-level premium from Medical Expenditure Panel Survey (MEPS), mapped to county level by HHS Qualified Health Plan Marketplace price. MEPS  data for state-wise out-of-pocket expenses | MEPS, HHS                              | County |
+| Miscellaneous  | Validated with the  Consumer Expenditure Survey data, we estimate other expenses as 10% of  spending on other necessities. Other figures: National Research Council, 15% -25% of cost on food and shelter. | 10% of of others                       | Tract  |
+| Tax            | Taxes include federal and state income tax, payroll taxes (Social Security), and state and local sales taxes where applicable. | IRS, VA Dept. Taxation                 | County |
+| Credit         | Federal tax credits including the Earned Income Tax Credit, the Child and Dependent Care Tax Credit, and the Child Tax Credit and applicable state tax credits | IRS, VA Dept. Taxation                 | County |
 
 Note:
 
@@ -88,20 +92,13 @@ We use the cost of living calculator to estimate the number of households facing
 ### Iterative Proportional Fitting (IPF)
 
 For privacy considerations, the Census Bureau only provides the aggregated figures at the census tract level, so from the American Community Survey (ACS), we can only retrieve the total number households in size and the total number of households in each income bracket, not a two-way table of the detailed composition. The following is an example of census tract 51.059.4922.01 in Fairfax County, VA: we can only retrieve the aggregated margins, and what's in the middle cells is missing.
-
 | Household size | HH1  | HH2  | HH3  | HH4  | HH5  | HH6  | HH7  | TOTAL |
 | ------------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----- |
-| Less than $10,000    |      |      |      |      |      |      |      | 91    |
-| $10,000 to $14,999   |      |      |      |      |      |      |      | 11    |
-| $15,000 to $24,999   |      |      |      |      |      |      |      | 13    |
-| $25,000 to $34,999   |      |      |      |      |      |      |      | 11    |
-| $35,000 to $49,999   |      |      |      |      |      |      |      | 82    |
-| $50,000 to $74,999   |      |      |      |      |      |      |      | 23    |
-| $75,000 to $99,999   |      |      |      |      |      |      |      | 101   |
-| $100,000 to $149,999 |      |      |      |      |      |      |      | 205   |
-| $150,000 to $199,999 |      |      |      |      |      |      |      | 326   |
-| $200,000 or more     |      |      |      |      |      |      |      | 1043  |
-| TOTAL                | 986  | 384  | 309  | 113  | 67   | 20   | 27   | 1906  |
+| Household number      | 986  | 384  | 309  | 113  | 67   | 20   | 27   | 1906  |
+
+|       | Less than $10,000 | $10,000 to $14,999 | $15,000 to $24,999 | $25,000 to $34,999 | $35,000 to $49,999 | $50,000 to $74,999 | $75,000 to $99,999 | $100,000 to $149,999 | $150,000 to $199,999 | $200,000 or more | TOTAL |
+| ----- | ----------------- | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | -------------------- | -------------------- | ---------------- | ----- |
+| TOTAL | 91                | 11                 | 13                 | 11                 | 82                 | 23                 | 101                | 205                  | 326                  | 1043             | 1906  |
 
 We use iterative proportional fitting (IPF) to estimate each cell and expand the two margins into a two-way table. IPF, a.k.a. RAS Algorithm in econometrics, makes an educated guess on the bivariate joint distribution. It starts with a presumed distribution, known as the seed, and proceeds to fit the aggregated margins. The choice of seed has a significant impact on the accuracy of the guess, so for each census tract, we use the ground-truth distribution of the PUMA they belong to as the seed.
 
