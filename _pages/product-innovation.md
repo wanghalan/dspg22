@@ -113,12 +113,13 @@ Once we extract the innovation-related articles from the dataset, we can apply t
 Our objective in building this news extraction tool is to create a free and open source way to obtain article data for the analysis of specific industries, in a way that can neatly integrate with our existing NLP pipeline.
 
 ## Discussions
-### How much severity should we use when extracting data?
-Based on our sample, we argue that the 4.2% success rate increase might not be worth the penalty incurred on the running time. Furthermore, the move towards severit 2 source text extractions is hardly sustainable, since news websites routinely update their source code which breaks site-specific modifications required to retrieve the information.
+The main challenge we see with doing news source text extraction is the rapidity with which websites update their source code. As new vulnerability arise on the web, so too does the defense measures taken to limit the survey of websites from robots. We identify the following key areas as the upsides for complementing survey data with news data.
 
-- News articles are rich sources of data that with the rise of natural language models, can be used to benefit government organizations?
-- Allow for opportunity data in the form of news to be accessible to researchers
-- Encourages research reproducibility
+### A low severity level is often sufficient
+Based on our sample, we argue that the 4.2% success rate increase is not be worth the penalty incurred on the running time. Furthermore, the move towards severit 2 source text extractions is hardly sustainable, since news websites routinely update their source code which breaks site-specific modifications required to retrieve the information.
+
+### The source data is timely and reproducible
+Text artifacts are rich sources of data that have been shown to be an effective indicator for innovation activity. With the rise of natural language models, the efficacy of the news articles are only expected to grow. Creating an open-source toolkit can allow future government organizations and researchers to leverage previously unstructured data more easily, without causing too much traffic to the main content hosting sites.
 
 ## Limitations and Future Works
 - Advertising incoporated in article text
