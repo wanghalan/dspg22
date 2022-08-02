@@ -46,16 +46,18 @@ To find rss feeds, we looked towards some of the most popular search engines wit
 ### Source Text Extraction
 Once we found a rss-feed search the avails us keywords and snippets, we realized that the snippets we find are mostly 1-2 sentences, which is less than the 3 we hoped that would allow us to run the Natural Language Processing (NLP) more effectively. As a result, we started to investigate the retrieval of source text directly.
 
+Considering the amount of articles we will need to develop a reliable database, we implemented a multithreaded program to maximize time efficiency. This allows multiple articles to be retrieved and processed concurrently in daemon threads. We also designed mechanisms for the high-priority user thread to tract the site domain of each request, and temporarily freeze the daemon thread if the attempted domain has just been requested. This allows for at least 3 seconds between each request to the same content host.
+
 #### Severity Levels
 As we collected source text, we realized that news sources have a varying degree of "friendliness" to being scraped. In other words, some websites intentionally resist source text from being extracted. We introduced the concept of _severity_ to our system so that we can navigate spending more computational power in order to access these more difficult websites. 
 
-|**Severity**|**Definition**|
-|--|--|
-|0| The website source text can be extracted using just http-get |
-|1| The website source text can be extracted using an automated without additional add-ons |
-|2| The website source text cannot be extracted using severity 0 or 1 (i.e., additional work is needed to gain access to the information)|
+| **Severity** | **Definition**                                               | Sample  Running Time | Sample Success Rate |
+| ------------ | ------------------------------------------------------------ | -------------------- | ------------------- |
+| 0            | The website source text can be extracted using just http-get | 3 min 2 sec          | 88.2%               |
+| 1            | The website source text can be extracted using an automated without additional add-ons | 7 min 22 sec         | 92.4%               |
+| 2            | The website source text cannot be extracted using severity 0 or 1 (i.e., additional work is needed to gain access to the information) | N/A                  | N/A                 |
 
-During our search, however, we found that more than 80% of the websites are retrievable using severity 0. To not cause undue burden to the content hosts, we did our evaluation of the system using only severity 0 source text. 
+During our test with a sample of 500 pharmaceutics news articles and 4 concurrent threads, however, we found that more than 80% of the websites are retrievable using severity 0, and the extra add-ons at severity 1 cause the running time to be much longer. To not cause undue burden to the content hosts, we did our evaluation of the system using only severity 0 source text.
 
 #### News Article Parser Comparison
 Using Python, we searched for open source article parsers ([Newspaper3k](https://github.com/codelucas/newspaper), [Article Parser](https://github.com/myifeng/article-parser), [Sumy](https://github.com/miso-belica/sumy)) and we manually checked a sample of the news articles to elucidate common ways an extraction might fail. We used the following articles: [bloomberg](https://www.bloomberg.com/news/newsletters/2022-06-07/apple-s-troubles-in-china-aren-t-going-away-quickly), [usatoday](https://www.usatoday.com/story/tech/2022/06/06/wwdc-22-apple-pay-buy-now-pay-later/7534225001/), [reuters](https://www.reuters.com/markets/stocks/australias-bnpl-stocks-wilt-after-apple-announces-entry-2022-06-07/), [forbes](https://www.forbes.com/sites/davidphelan/2022/05/13/apple-iphone-15-insider-leaks-astonishing-design-change/), [appleinsider](https://appleinsider.com/articles/22/05/15/ios-16-will-have-refreshed-apple-apps-but-look-the-same).
@@ -97,9 +99,6 @@ Note the 100 article max that is associated with each keyword. To learn more abo
 
 ### NLP
 Based on prior work from Neil, we did some things...
-
-### Multi-threading and speed-ups
-We implemented an example multi-threaded pipeline to extract data from each website without making too many queries to a website as once. (Insert Steve Figure here)
 
 ## Discussions
 - News articles are rich sources of data that with the rise of natural language models, can be used to benefit government organizations?
