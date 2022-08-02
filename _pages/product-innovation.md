@@ -89,9 +89,9 @@ Using keywords on pharmaceuticals extracted from the NACIS, we used ```rss-get``
 
 [![Article per keyword figure](../assets/img/extracted_text.svg)](../assets/fig/product-innovation_extracted-text.html)
 
-Note the 100 article max that is associated with each keyword. To learn more about the particulars of the google rss search queries, we recommend this article [^3].
+Note the 100 article max that is associated with each keyword. To learn more about the particulars of the google rss search queries, we recommend this article [^5].
 
-[^3]: https://newscatcherapi.com/blog/google-news-rss-search-parameters-the-missing-documentaiton
+[^5]: https://newscatcherapi.com/blog/google-news-rss-search-parameters-the-missing-documentaiton
 
 ### Comparison of the different text extraction modules
 - Include snippets from each model?
