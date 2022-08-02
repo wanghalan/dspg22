@@ -96,10 +96,10 @@ Note the 100 article max that is associated with each keyword. To learn more abo
 ### Comparison of severity
 We used a random sample of 500 urls from the 9000 urls we pulled from the most **rss-get** and tested severity 0 and severity 1 results and compiled the following table. 
 
-|**Severity Level**|**Running Time**|**Success Rate**|
-|--|--|--|
-0 | 03:02 | 88.2% |
-1 | 07:22 | 92.4% |
+|**Severity Level**|**Running Time**|**Articles/Second**|**Success Rate**|
+|--|--|--|--|
+0 | 03:02 |1.13| 88.2% |
+1 | 07:22 |2.47| 92.4% |
 ---
 We did not attempt to do any severity 2 activities to bypass the security put up by the found websites.
 
