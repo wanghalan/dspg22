@@ -97,7 +97,7 @@ Note the 100 article max that is associated with each keyword. To learn more abo
 [^5]: https://newscatcherapi.com/blog/google-news-rss-search-parameters-the-missing-documentaiton
 
 ### Comparison of severity
-We used a random sample of 500 URLs from the 9000 URLs we pulled from the most **rss-get**, tested severity zero and severity one results, and compiled the following table.
+We used a random sample of 500 URLs from the 9000 URLs we pulled from the most **rss-get** of the same afroementioned keywords list, and compared severity zero and severity one results.
 
 |**Severity Level**|**Running Time**|**Articles/Second**|**Success Rate**|
 |--|--|--|--|
@@ -113,6 +113,9 @@ Once we extract the innovation-related articles from the dataset, we can apply t
 Our objective in building this news extraction tool is to create a free and open source way to obtain article data for the analysis of specific industries, in a way that can neatly integrate with our existing NLP pipeline.
 
 ## Discussions
+### How much severity should we use when extracting data?
+Based on our sample, we argue that the 4.2% success rate increase might not be worth the penalty incurred on the running time. Furthermore, the move towards severit 2 source text extractions is hardly sustainable, since news websites routinely update their source code which breaks site-specific modifications required to retrieve the information.
+
 - News articles are rich sources of data that with the rise of natural language models, can be used to benefit government organizations?
 - Allow for opportunity data in the form of news to be accessible to researchers
 - Encourages research reproducibility
