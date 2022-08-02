@@ -10,7 +10,7 @@ toc_sticky: true
 ![Product innovation System Overview](../assets/img/product-innovation_system-overview.svg)
 
 ## Stakeholder(s)
-Gary Andersen, National Center for Science and Engineering Statistics ([NCSES](https://ncses.nsf.gov/))
+Gary Anderson, National Center for Science and Engineering Statistics ([NCSES](https://ncses.nsf.gov/))
 
 ## Abstract
 The Product Innovation project is a proof-of-concept toolkit that aims to track innovation activities sustainably using
