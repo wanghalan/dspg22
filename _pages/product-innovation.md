@@ -86,7 +86,7 @@ The goal of the comparison is to elucidate common ways an extraction might fail.
 ### Source Text Extraction
 Using keywords on pharmaceuticals extracted from the NACIS, we used ```rss-get``` to retrieve aset of keywords and we extracted 6386 articles for 2017 phrama-related articles.
 
-![Article per keyword figure](../assets/fig/product-innovation_extracted-text.svg)(../assets/fig/product-innovation_extracted-text.html)
+[![Article per keyword figure](../assets/img/extracted_text.svg)](../assets/fig/product-innovation_extracted-text.html)
 
 ### NLP
 Based on prior work from Neil, we did some things...
