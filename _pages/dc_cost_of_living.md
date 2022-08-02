@@ -142,17 +142,25 @@ Caveats, implications, etc.
 We are a team of four people
 
 <div class="row">
-    <div class="container">
-        <img src="../assets/img/Alanpic.png" alt="process" style="float: center; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
-    </div>
-    <div class="container">
-        <img src="../assets/img/Kishorepic.png" alt="sources" style="float: center; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
-    </div>
-    <div class="container">
-        <img src="../assets/img/stevepic.png" alt="sources" style="float: center; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
-    </div>
-    <div class="container">
-        <img src="../assets/img/Donovanpic.png" alt="sources" style="float: center; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
-    </div>
+    <figure  style="float: left; width: 40%; margin-right: 2%; margin-bottom: 0.5em;">
+        <img src="../assets/img/Alanpic.png" alt="process">
+        <figcaption> Alan Wang</figcaption>
+    </figure>
+    <figure  style="float: left; width: 40%; margin-right: 0%; margin-bottom: 0.5em;">
+        <img src="../assets/img/Kishorepic.png" alt="process">
+        <figcaption> Kishore Karthick</figcaption>
+    </figure>
 </div>
 <div style="clear:both;"></div>
+<div>
+    <figure  style="float: left; width: 40%; margin-right: 2%; margin-bottom: 0.5em;">
+        <img src="../assets/img/stevepic.png" alt="process">
+        <figcaption> Steve Zhou</figcaption>
+    </figure>
+    <figure  style="float: left; width: 40%; margin-right: 0%; margin-bottom: 0.5em;">
+        <img src="../assets/img/Donovanpic.png" alt="process">
+        <figcaption> Donovan Cates</figcaption>
+    </figure>
+</div>
+<div style="clear:both;"></div>
+
