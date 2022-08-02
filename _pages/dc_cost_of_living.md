@@ -152,10 +152,10 @@ We are a team of four people
         <img src="../assets/img/Kishorepic.png" alt="sources" style="float: center; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
     </div>
     <div class="container">
-        <img src="../assets/img/Stevepic.png" alt="sources" style="float: center; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
+        <img src="../assets/img/stevepic.png" alt="sources" style="float: center; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
     </div>
     <div class="container">
-        <img src="../assets/img/Donovan.png" alt="sources" style="float: center; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
+        <img src="../assets/img/Donovanpic.png" alt="sources" style="float: center; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
     </div>
 </div>
 <div style="clear:both;"></div>
