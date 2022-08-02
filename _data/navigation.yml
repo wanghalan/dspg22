@@ -2,9 +2,9 @@ projs:
   - title: Projects
     children:
       - title: "Product Innovation"
-        url: /dspg22/product-innovation/
+        url: /product-innovation/
       - title: "Data Commons : Cost of Living"
-        url: /dspg22/dc_cost_of_living/
+        url: /dc_cost_of_living/
       - title: "Installation"
         url: /docs/installation/
       - title: "Upgrading"
