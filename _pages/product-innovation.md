@@ -106,12 +106,6 @@ We used a random sample of 500 URLs from the 9000 URLs we pulled from the most *
 ---
 We did not attempt to do any severity 2 activities to bypass the security put up by the found websites.
 
-### NLP
-Based on prior work done by the lab, including our process of [building supervised classification models](https://www.methodspace.com/blog/novelty-in-the-news-detecting-innovation-with-machine-learning)  through [BERT based Language models](https://ieeexplore.ieee.org/document/9483744) using human-labeled training sets, we have an existing model that can be used to predict whether or not a news article is about a new, innovative product.
-Once we extract the innovation-related articles from the dataset, we can apply the techniques of [Named Entity Recognition](https://en.wikipedia.org/wiki/Named-entity_recognition) and [Question Answering](https://en.wikipedia.org/wiki/Question_answering) to extract specific pieces of information from the article text.
-
-Our objective in building this news extraction tool is to create a free and open source way to obtain article data for the analysis of specific industries, in a way that can neatly integrate with our existing NLP pipeline.
-
 ## Discussions
 The main challenge we see with news source text extraction is how websites update their source code rapidly. As new vulnerability arises on the web, so do the defense measures taken to limit the survey of websites from robots. We identify the following key areas as the upsides of complementing survey data with news data.
 
@@ -122,16 +116,24 @@ Based on our sample, we argue that the 4.2% success rate increase is not worth t
 Text artifacts are rich data sources that effectively indicate innovation activity. With the rise of natural language models, the efficacy of news articles is only expected to grow. Creating an open-source toolkit can allow future government organizations and researchers to leverage previously unstructured data more efficiently without causing too much traffic to the main content hosting sites.
 
 ## Limitations and Future Works
-- **Advertisement cleaning**: advertisements can be misleading for our NLP classifiers, as its text can be proximate to a new product. Although the parser we have implemented can remove some ads by their HTML tags, the way certain news source embed ads still poses future challenges. For example, this [Bloomberg article](https://www.bloomberg.com/news/newsletters/2022-06-07/apple-s-troubles-in-china-aren-t-going-away-quickly) contains a "Today's must-read" section that embeds links to other Bloomberg webpages, and this type of ads is hard for the parser to identify.
-  - One possible solution, as used by the SUMY package, is to remove all text with URLs embedded, i.e. ignore texts in HTML's \<a\> tag. But we may lose important information in scenarios when, for example, the news report attached a link to the manufacturer's page of the new product.
+### Advertisement cleaning
+Advertisements can be misleading for our NLP classifiers, as its text can be proximate to a new product. Although the parser we have implemented can remove some ads by their HTML tags, the way certain news source embed ads still poses future challenges. For example, this [Bloomberg article](https://www.bloomberg.com/news/newsletters/2022-06-07/apple-s-troubles-in-china-aren-t-going-away-quickly) contains a "Today's must-read" section that embeds links to other Bloomberg webpages, and this type of ads is hard for the parser to identify. One possible solution, as used by the SUMY package, is to remove all text with URLs embedded, i.e. ignore texts in HTML's \<a\> tag. But we may lose important information in scenarios when, for example, the news report attached a link to the manufacturer's page of the new product.
 
-- **Going to Severity 2**: a higher severity level will give us more information, but also requires an increased amount of computing resources. Moreover, the universality of Severity 2 program makes another challenge. When facing additional protections, although we can optimize our code to target a few particular sites with a randomized header or a JavaScript tag, it is very difficult to construct an omnipotent program to handle all sites. Going forward, we might implement source-specific measures to retrieve articles from sites that are of particularly high value for the industry searched, but we will not be able to guarantee a 100% success rate for all sites.
-- **Black-listed by the website**: most websites have traffic-monitoring measures to protect their host server, and we will not repeatedly send requests to the same host without a few seconds' wait. Nevertheless, some websites, such as [Fierce Pharma](https://www.fiercepharma.com/), have particularly conservative protective measures that seem to be also tracking the amount of traffic through our IP, and would block our requests for several hours. If we want to secure a reliable retrieval of information from these websites in the future, we might need a distributed web of servers and IP ports, which poses higher need for computing power and higher risk of offending the content host.
-- **Comparison with Ground-truth Metric**: although we have a set of manually labelled articles to train our NLP classifier, the metric to evaluate the accuracy of our final results is missing. To achieve this, we need a trustworthy definition and a large data set for the ground-truth company-new-product information, but also a numeric method to evaluate the reliability of our results. We are still searching for related literature and data sources.
+### Going to Severity 2
+A higher severity level will give us more information, but also requires an increased amount of computing resources. Moreover, the universality of Severity 2 program makes another challenge. When facing additional protections, although we can optimize our code to target a few particular sites with a randomized header or a JavaScript tag, it is very difficult to construct an omnipotent program to handle all sites. Going forward, we might implement source-specific measures to retrieve articles from sites that are of particularly high value for the industry searched, but we will not be able to guarantee a 100% success rate for all sites.
+
+### Black-listed by the website
+Most websites have traffic-monitoring measures to protect their host server, and we will not repeatedly send requests to the same host without a few seconds' wait. Nevertheless, some websites, such as [Fierce Pharma](https://www.fiercepharma.com/), have particularly conservative protective measures that seem to be also tracking the amount of traffic through our IP, and would block our requests for several hours. If we want to secure a reliable retrieval of information from these websites in the future, we might need a distributed web of servers and IP ports, which poses higher need for computing power and higher risk of offending the content host.
+
+### Comparison with Ground-truth Metric
+Although we have a set of manually labelled articles to train our NLP classifier, the metric to evaluate the accuracy of our final results is missing. To achieve this, we need a trustworthy definition and a large data set for the ground-truth company-new-product information, but also a numeric method to evaluate the reliability of our results. We are still searching for related literature and data sources.
+
+### NLP
+Based on prior work done by the lab, including our process of [building supervised classification models](https://www.methodspace.com/blog/novelty-in-the-news-detecting-innovation-with-machine-learning)  through [BERT based Language models](https://ieeexplore.ieee.org/document/9483744) using human-labeled training sets, we have an existing model that can be used to predict whether or not a news article is about a new, innovative product.
+Once we extract the innovation-related articles from the dataset, we can apply the techniques of [Named Entity Recognition](https://en.wikipedia.org/wiki/Named-entity_recognition) and [Question Answering](https://en.wikipedia.org/wiki/Question_answering) to extract specific pieces of information from the article text. Our objective in building this news extraction tool is to create a free and open source way to obtain article data for the analysis of specific industries, in a way that can neatly integrate with our existing NLP pipeline.
 
 ## Team
 - Alan Wang (ahw9f@virginia.edu)
 - Steve Zhou (wz8ry@virginia.edu)
 - Neil Kattampallil (nak3t@virginia.edu)
-
 ---
