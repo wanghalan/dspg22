@@ -142,4 +142,20 @@ Caveats, implications, etc.
 
 ## Team
 
-Some pictures here
+We are a team of four people
+
+<div class="row">
+    <div class="container">
+        <img src="../assets/img/Alanpic.png" alt="process" style="float: center; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
+    </div>
+    <div class="container">
+        <img src="../assets/img/Kishorepic.png" alt="sources" style="float: center; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
+    </div>
+    <div class="container">
+        <img src="../assets/img/Stevepic.png" alt="sources" style="float: center; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
+    </div>
+    <div class="container">
+        <img src="../assets/img/Donovan.png" alt="sources" style="float: center; width: 49%; margin-right: 1%; margin-bottom: 0.5em;">
+    </div>
+</div>
+<div style="clear:both;"></div>
