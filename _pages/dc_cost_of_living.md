@@ -64,7 +64,15 @@ There are various categories that a calculator have to take into consideration f
 
 ### Examples from Fairfax County, VA
 
-We took three **cesus tracts** from the Fairfax county and tried to calculate the cost of living for a number of hosueholds  and calculated who are food insecure according to our cost of living calculator. We tried it out with various combinations of households ranging from HH1 to HH7.
+We took three census tracts from the Fairfax county, VA and estimated the cost of living for household in these tracts. The calculations are based on prior assumption of household composition and accounts for household size from 1 to 7 or more, represented as "HH1" to "HH7".
+
+| Annual cost of living              | HH1     | HH2     | HH3      | HH4      | HH5      | HH6      | HH7      |
+| ---------------------------------- | ------- | ------- | -------- | -------- | -------- | -------- | -------- |
+| 51.059.4922.01                     | $51,532 | $83,456 | $117,473 | $150,888 | $172,162 | $186,675 | $199,703 |
+| 51.059.4602.00                     | $53,059 | $84,839 | $118,996 | $152,760 | $174,383 | $188,891 | $202,483 |
+| 51.059.4522.00                     | $44,536 | $75,056 | $108,654 | $141,301 | $161,807 | $174,637 | $187,672 |
+| UWashington-SSS for Fairfax County | $42,720 | $71,076 | $103,488 | $134,508 | $152,052 | $161,718 | $178,704 |
+
 ## Application with Food Insecurity
 
 We use the cost of living calculator to estimate the number of households facing food insecurity or in risk of food insecurity in each census tract. We take the size of household as a independent variable for estimating the cost of living, and compare the cost to their income category to determine the risk.
@@ -117,7 +125,7 @@ We consider all households of size 1 making less than \$49,999 a year as food in
 
 Caveats, implications, etc.
 
-## Team
+## Team of DSPG Interns
 
 We are a team of four people
 
