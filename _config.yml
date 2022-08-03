@@ -1,5 +1,5 @@
 remote_theme: yaoeh/dspg22_minimal-mistakes
-
+baseurl: /dspg22 # otherwise relative links might not work. See: https://mademistakes.com/mastering-jekyll/how-to-link/
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
