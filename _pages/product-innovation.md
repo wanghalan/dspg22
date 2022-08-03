@@ -116,6 +116,8 @@ Based on our sample, we argue that the 4.2% success rate increase is not worth t
 Text artifacts are rich data sources that effectively indicate innovation activity. With the rise of natural language models, the efficacy of news articles is only expected to grow. Creating an open-source toolkit can allow future government organizations and researchers to leverage previously unstructured data more efficiently without causing too much traffic to the main content hosting sites.
 
 ## Limitations and Future Works
+We identify future directions for technological upgrades but also updates in principle. The main step for the future is to identify if the collected dataset is a representative sample of the innovation activity happening in the US. Towards this end, identifying the right keywords to search and comparing with other brokered data sources would allow us to see if the links we found are comparable or complementary. For the technical sides, we list the following challenges:
+
 ### Advertisement cleaning
 Advertisements can be misleading for our NLP classifiers, as its text can be proximate to a new product. Although the parser we have implemented can remove some ads by their HTML tags, the way certain news source embed ads still poses future challenges. For example, this [Bloomberg article](https://www.bloomberg.com/news/newsletters/2022-06-07/apple-s-troubles-in-china-aren-t-going-away-quickly) contains a "Today's must-read" section that embeds links to other Bloomberg webpages, and this type of ads is hard for the parser to identify. One possible solution, as used by the SUMY package, is to remove all text with URLs embedded, i.e. ignore texts in HTML's \<a\> tag. But we may lose important information in scenarios when, for example, the news report attached a link to the manufacturer's page of the new product.
 
@@ -124,9 +126,6 @@ A higher severity level will give us more information, but also requires an incr
 
 ### Black-listed by the website
 Most websites have traffic-monitoring measures to protect their host server, and we will not repeatedly send requests to the same host without a few seconds' wait. Nevertheless, some websites, such as [Fierce Pharma](https://www.fiercepharma.com/), have particularly conservative protective measures that seem to be also tracking the amount of traffic through our IP, and would block our requests for several hours. If we want to secure a reliable retrieval of information from these websites in the future, we might need a distributed web of servers and IP ports, which poses higher need for computing power and higher risk of offending the content host.
-
-### Comparison with Ground-truth Metric
-Although we have a set of manually labelled articles to train our NLP classifier, the metric to evaluate the accuracy of our final results is missing. To achieve this, we need a trustworthy definition and a large data set for the ground-truth company-new-product information, but also a numeric method to evaluate the reliability of our results. We are still searching for related literature and data sources.
 
 ### NLP
 Based on prior work done by the lab, including our process of [building supervised classification models](https://www.methodspace.com/blog/novelty-in-the-news-detecting-innovation-with-machine-learning)  through [BERT based Language models](https://ieeexplore.ieee.org/document/9483744) using human-labeled training sets, we have an existing model that can be used to predict whether or not a news article is about a new, innovative product.
