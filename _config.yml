@@ -25,3 +25,4 @@ defaults:
       author_profile: false
       sidebar:
         nav: "projs"
+      identifier: "dspg22" # allows us to identify and just loop through dspg22 pages
