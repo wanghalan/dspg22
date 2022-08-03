@@ -7,7 +7,7 @@ toc_label: Cost of Living
 toc_sticky: true
 ---
 
-Find a way to get the Open Source Routing Machine (OSRM) to return the correct routing for destinations outside of Virginia. Correspondingly, create a standardized operating procedure for merging and testing OSM files.
+We found a way to retrieve correct routing distances for destinations outside of Virginia, using the Open Source Routing Machine (OSRM). We then createed a standard operating procedure for merging and testing OSM files.
 
 ## Introduction
 
@@ -15,7 +15,7 @@ In order to make accessibility calculations such as the two-step floating catchm
 
 ## Methods
 ![OSRM Updates](../assets/img/osrm_updates.svg)
-**We automated a route distance validation process (marked in blue) and incorporated it into the existing infrastructure.**
+*We automated a route distance validation process (marked in blue) and incorporated it into the existing infrastructure.*
 
 Building off our existing infrastructure, we elect to create our own Docker instance to honor the OSRM [usage policy](https://github.com/Project-OSRM/osrm-backend/wiki/Api-usage-policy). To merge OSM Protocolbuffer Binary Format (PBF) files for our own Docker instance, then, we utilize the open-source tool [Osmium](https://osmcode.org/osmium-tool/). Using Python, we then extract valid routing locations using the Overpass API and ground truth distances from the OSRM server. Finally, we compare the results between our server with the OSRM server to evaluate the quality of the merge.
 
@@ -33,5 +33,6 @@ We created a standard operating procedure to merge and test OSM files for OSRM q
 
 ## Online resources
 We share the following resources to aid future researchers in the same endeavor:
-    - [GitHub gist merging OSM files](https://gist.github.com/yaoeh/859cefaea7b61046d084ead1b3d104a1)
-    - [GitHub repository for automated OSRM testing](https://github.com/yaoeh/dspg22_osm-tester)
+
+- [GitHub gist merging OSM files](https://gist.github.com/yaoeh/859cefaea7b61046d084ead1b3d104a1)
+- [GitHub repository for automated OSRM testing](https://github.com/yaoeh/dspg22_osm-tester)
