@@ -47,6 +47,7 @@ We analyzed data sources in each calculator and conducted comparative studies in
 <div style="clear:both;"></div>
 </center>
 
+
 ### Our Sources
 
 There are various categories that a calculator have to take into consideration for estimating the cost of living in a particular area. We identified 7 key components for the cost of living: food, housing, transportation, child care, health care, other necessities (miscellaneous), and tax (including tax credits). After weeks of comparing the pros and cons of different sources and approaches to estimate, we come up with the following table that shows the **Methodology Summary** of our proposed Cost of Living Calculator.
