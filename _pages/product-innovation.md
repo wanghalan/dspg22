@@ -1,8 +1,7 @@
 ---
 permalink: /product-innovation/
 title: Product Innovation
-
-layout: single
+identifier: "dspg22" 
 toc: true
 toc_label: Product Innovation
 toc_sticky: true
