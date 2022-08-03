@@ -46,6 +46,7 @@ We analyzed data sources in each calculator and found out the best source, then 
 </div>
 <div style="clear:both;"></div>
 
+
 ### Our Sources
 
 There are various categories that a calculator have to take into consideration for estimating the Cost of living in a particular area. 
