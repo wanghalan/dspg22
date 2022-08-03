@@ -11,6 +11,8 @@ projs:
         url: https://skylarhaskiell.github.io/rnd/
       - title: "ARI2"
         url: https://uva-bi-sdad.github.io/dspg22ari2/
+      - title: "Broadband"
+        url: https://dcc7ffm.github.io/dspg-ers/
 
   - title: DSPG 2022
     children:
