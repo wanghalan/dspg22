@@ -4,7 +4,9 @@ layout: single
 ---
 
 {% for page in site.pages %}
-  ## {{ page.title }}
-  {{ page.excerpt | markdownify }}
-  [read more here]({{ page.url }})
+  {% if page.identifier == 'dspg22' %}
+    ## {{ page.title }}
+    {{ page.excerpt | markdownify }}
+    [read more here]({{ page.url }})
+  {% endif %}
 {% endfor %}
