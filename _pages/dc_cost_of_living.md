@@ -124,7 +124,7 @@ We consider all households of size 1 making less than \$49,999 a year as food in
 | No Food Insecure HH      | 1569 | 82%  |
 | Total                    | 1906 | 100% |
 ## Evaluation of results
-Caveats, implications, etc.
+By pulling data from more granular sources than implemented by prior calculators, we created a calculator in which the cost of living varies not only across counties but across census tracts. Specifically, we found information for transportation and housing that was more granular than what was being implemented in all other calculators, giving our calculator an edge, especially in larger counties. A caveat to these results is that we could not find tract-level data for specific categories, such as food and healthcare. However, we deemed it unlikely that these were as variable across a county as other variables may be. Using these results, we could pinpoint the income bracket(s) at which households may become food insecure in a given tract. This method, along with PUMA data, has allowed for more detailed evaluations of the amount of food insecure households in an area, an essential metric for local governments when determining how to allocate funding.
 
 ## Open Street Routing Machine
 To improve our routing calculations, we also made updates to our infrastructure. For posterity, we include the project on a separate page [here](https://yaoeh.github.io/dspg22/dc_osrm/).
