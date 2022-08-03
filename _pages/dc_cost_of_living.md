@@ -24,7 +24,7 @@ Local communities have data on policies, strategies, events, and social behavior
 
 ## Cost of Living Calculator
 
-One important section of our data commons is the proportion of households at risk of food insecurity in each region. To make a reliable estimation of households at risk, we need a trustworthy calculator for the cost of living in each corresponding region. A cost-of-living adjustment is important because it allows employees, retirees and people living on fixed incomes to afford housing, goods, services and taxes as prices increase over time.The cost of living is often used to compare how expensive it is to live in one city versus another. To account for sub-county level variations in cost of living, the geographic resolution we target is at census-tract level. According to the [U.S. Census Bureau](https://www.census.gov/programs-surveys/geography/about/glossary.html#par_textimage_13), a census tract is 
+One important section of our data commons is the proportion of households at risk of food insecurity in each region. To make a reliable estimation of households at risk, we need a trustworthy calculator for the cost of living in each corresponding region. A cost-of-living adjustment is important because it allows employees, retirees and people living on fixed incomes to afford housing, goods, services and taxes as prices increase over time. The cost of living is often used to compare how expensive it is to live in one city versus another. To account for sub-county level variations in cost of living, the geographic resolution we target is at census-tract level. According to the [U.S. Census Bureau](https://www.census.gov/programs-surveys/geography/about/glossary.html#par_textimage_13), a census tract is a subcounty level area with approximately 4,000 inhabitants. Census tracts are usually contiguous area defined by visible and identifiable boundaries, by providing data at tract level, we hope to help local governments make data-informed decisions.
 
 ### Comparisons of Existing Calculators
 We started our process by comparing three existing cost of living calculators:
@@ -124,7 +124,7 @@ We consider all households of size 1 making less than \$49,999 a year as food in
 | No Food Insecure HH      | 1569 | 82%  |
 | Total                    | 1906 | 100% |
 ## Evaluation of results
-Caveats, implications, etc.
+By pulling data from more granular sources than implemented by prior calculators, we created a calculator in which the cost of living varies not only across counties but across census tracts. Specifically, we found information for transportation and housing that was more granular than what was being implemented in all other calculators, giving our calculator an edge, especially in larger counties. A caveat to these results is that we could not find tract-level data for specific categories, such as food and healthcare. However, we deemed it unlikely that these were as variable across a county as other variables may be. Using these results, we could pinpoint the income bracket(s) at which households may become food insecure in a given tract. This method, along with PUMA data, has allowed for more detailed evaluations of the amount of food insecure households in an area, an essential metric for local governments when determining how to allocate funding.
 
 ## Open Street Routing Machine
 To improve our routing calculations, we also made updates to our infrastructure. For posterity, we include the project on a separate page [here](https://yaoeh.github.io/dspg22/dc_osrm/).
