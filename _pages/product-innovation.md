@@ -131,7 +131,9 @@ Based on prior work done by the lab, including our process of [building supervis
 Once we extract the innovation-related articles from the dataset, we can apply the techniques of [Named Entity Recognition](https://en.wikipedia.org/wiki/Named-entity_recognition) and [Question Answering](https://en.wikipedia.org/wiki/Question_answering) to extract specific pieces of information from the article text. Our objective in building this news extraction tool is to create a free and open source way to obtain article data for the analysis of specific industries, in a way that can neatly integrate with our existing NLP pipeline.
 
 ## Team
+### Interns
 - Alan Wang (ahw9f@virginia.edu)
 - Steve Zhou (wz8ry@virginia.edu)
+### Mentor
 - Neil Kattampallil (nak3t@virginia.edu)
 ---
