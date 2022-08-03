@@ -139,7 +139,7 @@ We are a team of four people
     </figure>
     <figure  style="float: left; width: 40%; margin-right: 0%; margin-bottom: 0.5em;">
         <img src="../assets/img/Kishorepic.png" alt="process">
-        <figcaption> Kishorekarthick </figcaption>
+        <figcaption> Kishorekarthick</figcaption>
     </figure>
 </div>
 <div style="clear:both;"></div>
