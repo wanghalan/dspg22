@@ -24,7 +24,7 @@ Local communities have data on policies, strategies, events, and social behavior
 
 ## Cost of Living Calculator
 
-One important section of our data commons is the proportion of households at risk of food insecurity in each region. To make a reliable estimation of households at risk, we need a trustworthy calculator for the cost of living in each corresponding region. A cost-of-living adjustment is important because it allows employees, retirees and people living on fixed incomes to afford housing, goods, services and taxes as prices increase over time.The cost of living is often used to compare how expensive it is to live in one city versus another. To account for sub-county level variations in cost of living, the geographic resolution we target is at census-tract level. According to the [U.S. Census Bureau](https://www.census.gov/programs-surveys/geography/about/glossary.html#par_textimage_13), a census tract is 
+One important section of our data commons is the proportion of households at risk of food insecurity in each region. To make a reliable estimation of households at risk, we need a trustworthy calculator for the cost of living in each corresponding region. A cost-of-living adjustment is important because it allows employees, retirees and people living on fixed incomes to afford housing, goods, services and taxes as prices increase over time. The cost of living is often used to compare how expensive it is to live in one city versus another. To account for sub-county level variations in cost of living, the geographic resolution we target is at census-tract level. According to the [U.S. Census Bureau](https://www.census.gov/programs-surveys/geography/about/glossary.html#par_textimage_13), a census tract is a subcounty level area with approximately 4,000 inhabitants. Census tracts are usually contiguous area defined by visible and identifiable boundaries, by providing data at tract level, we hope to help local governments make data-informed decisions.
 
 ### Comparisons of Existing Calculators
 We started our process by comparing three existing cost of living calculators:
@@ -139,8 +139,7 @@ We are a team of four people
     </figure>
     <figure  style="float: left; width: 40%; margin-right: 0%; margin-bottom: 0.5em;">
         <img src="../assets/img/Kishorepic.png" alt="process">
-        <figcaption> Kishore Karthick 
-        <br>Kishore is a graduate student at the University of Virginia doing a  masters in Computer Engineering</figcaption>
+        <figcaption> Kishorekarthick </figcaption>
     </figure>
 </div>
 <div style="clear:both;"></div>
