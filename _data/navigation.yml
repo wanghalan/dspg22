@@ -5,7 +5,12 @@ projs:
         url: product-innovation/
       - title: "Data Commons : Cost of Living"
         url: dc_cost_of_living/
-
+      - title: "Costal Futures"
+        url: https://jme6bk.github.io/CoastalFutures/
+      - title: "R&D Emerging Digitalization Trends"
+        url: https://skylarhaskiell.github.io/rnd/
+      - title: "Soldier Charcteristics that Contribute to Unit Performance: A Qualitative Analysis"
+        url: https://uva-bi-sdad.github.io/dspg22ari2/
 
   - title: DSPG 2022
     children:
