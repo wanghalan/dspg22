@@ -139,7 +139,8 @@ We are a team of four people
     </figure>
     <figure  style="float: left; width: 40%; margin-right: 0%; margin-bottom: 0.5em;">
         <img src="../assets/img/Kishorepic.png" alt="process">
-        <figcaption> Kishore Karthick</figcaption>
+        <figcaption> Kishore Karthick 
+        <br>Kishore is a graduate student at the University of Virginia doing a  masters in Computer Engineering</figcaption>
     </figure>
 </div>
 <div style="clear:both;"></div>
