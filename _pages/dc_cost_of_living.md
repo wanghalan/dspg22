@@ -127,7 +127,7 @@ We consider all households of size 1 making less than \$49,999 a year as food in
 Caveats, implications, etc.
 
 ## Open Street Routing Machine
-To improve our routing calculations, we also made updates to our infrastructure. For posterity, we include the project on a separate page [here]({{ site.base_url}}dc_osrm)
+To improve our routing calculations, we also made updates to our infrastructure. For posterity, we include the project on a separate page [here](https://yaoeh.github.io/dspg22/dc_osrm/).
 
 ## Team of DSPG Interns
 We are a team of four people
