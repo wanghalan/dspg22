@@ -1,7 +1,6 @@
 ---
 title: "Data Commons | Open Street Routing Machine"
 permalink: /dc_osrm/
-identifier: "dspg22"
 toc: true
 toc_label: Cost of Living
 toc_sticky: true
