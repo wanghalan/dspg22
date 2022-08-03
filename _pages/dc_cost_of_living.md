@@ -2,7 +2,7 @@
 title: "Data Commons | Cost of Living and Food Insecurity"
 permalink: /dc_cost_of_living/
 layout: single
-
+identifier: "dspg22" 
 toc: true
 toc_label: Cost of Living
 toc_sticky: true
