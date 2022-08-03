@@ -66,6 +66,8 @@ There are various categories that a calculator have to take into consideration f
 
 We took three census tracts from the Fairfax county, VA and estimated the cost of living for household in these tracts. The calculations are based on prior assumption of household composition and accounts for household size from 1 to 7 or more, represented as "HH1" to "HH7".
 
+![Fairfax Tracts](../assets/img/Fairfax_Tracts.png)
+
 | Annual cost of living              | HH1     | HH2     | HH3      | HH4      | HH5      | HH6      | HH7      |
 | ---------------------------------- | ------- | ------- | -------- | -------- | -------- | -------- | -------- |
 | 51.059.4922.01                     | $51,532 | $83,456 | $117,473 | $150,888 | $172,162 | $186,675 | $199,703 |
