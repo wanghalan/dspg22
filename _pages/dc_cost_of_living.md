@@ -52,7 +52,7 @@ We analyzed data sources in each calculator and conducted comparative studies in
 
 ### Our Sources
 
-There are various categories that a calculator have to take into consideration for estimating the cost of living in a particular area. We identified 7 key components for the cost of living: food, housing, transportation, child care, health care, other necessities (miscellaneous), and tax (including tax credits). After weeks of comparing the pros and cons of different sources and approaches to estimate, we come up with the following table that shows the **Methodology Summary** of our proposed Cost of Living Calculator.
+There are various categories that a calculator takes into consideration for estimating the cost of living in a particular area. We identified 7 key components for the cost of living: food, housing, transportation, child care, health care, other necessities (miscellaneous), and tax (including tax credits). After weeks of comparing the pros and cons of different sources and approaches to estimate, we come up with the following table that shows the **Methodology Summary** of our proposed Cost of Living Calculator.
 
 | Category       | Description                                                  | Source                                 | Geo resolution |
 | -------------- | ------------------------------------------------------------ | -------------------------------------- | -------------- |
@@ -61,7 +61,7 @@ There are various categories that a calculator have to take into consideration f
 | Transportation | H + T index. Estimation based on three components: auto ownership, auto use, and transit use. It uses information from ACS (means of transportation to work, vehicles at home) | Centre for Neighborhood Technology     | Tract          |
 | Child Care     | Market-rate costs from the 75th percentile and estimated by the Virginia Department of Social Services, by categories: age, geography and type of facility. | Virginia Department of Social Services | County         |
 | Medical        | Acquire through UWashington-SSS calculator: state-level premium from Medical Expenditure Panel Survey (MEPS), mapped to county level by HHS Qualified Health Plan Marketplace price. MEPS  data for state-wise out-of-pocket expenses | MEPS, HHS                              | County         |
-| Miscellaneous  | Validated with the  Consumer Expenditure Survey data, we estimate other expenses as 10% of  spending on other necessities. Other figures: National Research Council, 15% -25% of cost on food and shelter. | 10% of of others                       | Tract          |
+| Miscellaneous  | Validated with the  Consumer Expenditure Survey data, we estimate other expenses as 10% of spending on other necessities. Other figures: National Research Council, 15% -25% of cost on food and shelter. | 10% of others                       | Tract          |
 | Tax            | Taxes include federal and state income tax, payroll taxes (Social Security), and state and local sales taxes where applicable. | IRS, VA Dept. Taxation                 | County         |
 | Credit         | Federal tax credits including the Earned Income Tax Credit, the Child and Dependent Care Tax Credit, and the Child Tax Credit and applicable state tax credits | IRS, VA Dept. Taxation                 | County         |
 
@@ -80,7 +80,7 @@ We took three census tracts from the Fairfax county, VA and estimated the cost o
 
 ## Application with Food Insecurity
 
-We use the cost of living calculator to estimate the number of households facing food insecurity or in risk of food insecurity in each census tract. We take the size of household as a independent variable for estimating the cost of living, and compare the cost to their income category to determine the risk.
+We use the cost of living calculator to estimate the number of households facing food insecurity or in risk of food insecurity in each census tract. We take the size of household as an independent variable for estimating the cost of living, and compare the cost to their income category to determine the risk.
 
 ### Iterative Proportional Fitting (IPF)
 
