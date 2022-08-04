@@ -16,7 +16,19 @@ The Product Innovation project is a proof-of-concept toolkit that aims to track 
 [opportunity data](https://hdsr.mitpress.mit.edu/pub/hnptx6lq/release/10). The toolkit accelerates [Really Simple Syndication (RSS)](https://en.wikipedia.org/wiki/RSS) queries and news source text extraction using open-source modules and browser automation. We then applied natural language processing (NLP) to analyze the collected texts to detect business, product, and innovation status.
 
 ## Introduction
-The goal of our project was to explore the feasibility of complementing the [Annual Business Survey (ABS)](https://www.census.gov/programs-surveys/abs.html)  with alternative data sources. Since traditional innovation indicators, such as patents and questionnaire-based surveys, can suffer from a lack of timeliness, granularity, and coverage [^1], we investigated complementing the survey findings with information from opportunity data on the web. While accessing websites individually as humans is easy, we found it non-trivial to automate news-text extraction in a free and open-source way. Consequently, we contribute this summer by creating an example framework for researchers to extract news text.
+The goal of our project was to explore the feasibility of complementing the [Annual Business Survey (ABS)](https://www.census.gov/programs-surveys/abs.html)  with alternative data sources.
+
+The National Center for Science and Engineering Statistics (NCSES), part of the National Science Foundation (NSF) conducts the Annual Business Survey to collect data on R&D, innovation, technology, intellectual property, and business owner characteristics. This information was previously collected through the Business R&D Innovation Survey (BRDIS)
+
+While ABS measures innovation incidence, i.e., the number of innovating firms, our aim is to test the feasibility of developing methods using non-traditional data to obtain richer and complementary innovation measures [^1], and as part of this, we investigated cthe use of opportunity data on the web. While accessing websites individually as humans is easy, we found it non-trivial to automate news-text extraction in a free and open-source way. Consequently, we contribute this summer by creating an example framework for researchers to extract news text.
+
+##Product Innovation : Defined
+In order to decide whether a news article is actually innovation related or not, we must first define what we mean by product innovation.
+For this, we use the definition contained within the Oslo Manual
+![Oslo Manual](../assets/img/oslo-manual-2018.jpg)
+>Product Innovation Definition - As per the Oslo Manual 2018
+Guidelines for Collecting, Reporting and Using Data on Innovation, 4th Edition
+>>“ A product innovation is a new or improved good or service that differs significantly from the firm’s previous goods or services and that has been made available to potential users. “
 
 ## Related Works
 We found several prior works that utilized web information to track innovation activities. For example, in 2013, Arora et al. used web-scraping techniques to track the innovation activity of smaller firms whose limited resources do not readily permit activities such as publishing and patenting [^2]. Gök et al. also investigated website data for effectiveness as a research method for innovation studies [^3]. They observe that far more companies report undertaking R&D activities on their websites than would be suggested by looking only at conventional data sources. Gök et al. additionally found that web mining offers insights that are more downstream in the innovation process. More recently, Axenbeck and Breihaupt found that website text features significantly contribute to their innovation prediction performance for over 4,000 German firms [^4]. While many papers found the web helpful in tracking innovation activity, we did not find a study that evaluated the feasibility of news article source text on the web to track innovation activity.
