@@ -110,7 +110,7 @@ The goal of the comparison is to elucidate common ways an extraction might fail.
 ## Results
 
 ### Source Text Extraction
-Using [keywords on pharmaceuticals extracted from the NACIS](https://www.naics.com/naics-code-description/?code=325411), we used ```rss-get``` to retrieve aset of keywords and we extracted 6386 articles for 2017 phrama-related articles.
+Using [keywords on pharmaceuticals extracted from the NACIS](https://www.naics.com/naics-code-description/?code=325411), we used ```rss-get``` to retrieve a set of keywords and we extracted 6386 articles for 2017 phrama-related articles.
 
 [![Article per keyword figure](../assets/img/extracted_text.svg)](../assets/fig/product-innovation_extracted-text.html)
 
