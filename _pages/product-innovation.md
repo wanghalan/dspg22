@@ -43,6 +43,15 @@ To find rss feeds, we looked towards some of the most popular search engines wit
 |[ABC News](https://abcnews.go.com)|General Media|<span style="color:green">Found</span>|<span style="color:red">Not found</span>|<span style="color:red">Not found</span>|<ul><li>Does not have usable rss feed. Web scraping with keyword search is possible, but most of the content seems to be videos without transcript.</li></ul>
 ---
 
+#### Example RSS Query
+Finding the Google offers the most comprehensive rss news query, we proceded with Google. Below, we include an example rss query to google:
+```python
+https://news.google.com/rss/search?q={0}+after:{1}+before:{2}
+```
+Where {0} is filled with the keyword, {1} is filled with end time, and {2} is filled with the start time. An example query would then look like this:
+
+[https://news.google.com/rss/search?q=Birth%20control%20pills%20+after:2017-01-01+before:2017-12-31](https://news.google.com/rss/search?q=Birth%20control%20pills%20+after:2017-01-01+before:2017-12-31)
+
 ### Source Text Extraction
 Once we found a rss-feed search the avails us keywords and snippets, we realized that the snippets we find are mostly 1-2 sentences, which is less than the 3 we hoped that would allow us to run the Natural Language Processing (NLP) more effectively. As a result, we started to investigate the retrieval of source text directly.
 
