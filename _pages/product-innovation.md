@@ -52,7 +52,7 @@ To find rss feeds, we looked towards some of the most popular search engines wit
 |--|--|--|--|--|--|
 |[Google](https://news.google.com/rss/search?q={0})|Search Engine|<span style="color:green">Found</span>|<span style="color:green">Found</span>|<span style="color:green">Found</span>|<ul><li>Successful RSS keyword extraction using: https://news.google.com/rss/search?q={0}</li><li>Column _summary_detail.value_ might contain one sentence description of the news</li></ul>|
 |[Bing](https://www.bing.com/news/search?q={0}&format=rss)|Search Engine|<span style="color:green">Found</span>|<span style="color:green">Found</span>|<span style="color:red">Not found</span>|<ul><li>Successful RSS keyword extraction using: https://www.bing.com/news/search?q={0}&format=rss</li><li>Column _summary_detail.value_ might contain 2-3 sentences of the news </li></ul>|
-|[Baidu](?)|Search Engine|<span style="color:red">Not found</span>|<span style="color:red">Not found</span>|<span style="color:red">Not found</span>|<ul><li>We found a website https://www.baidu.com/search/rss.html that seems to describe the existance of rss functioning. However, upon clicking into the keyword search field, I kept being returned the same news in non-RSS format</li></ul>|
+|[Baidu](?)|Search Engine|<span style="color:red">Not found</span>|<span style="color:red">Not found</span>|<span style="color:red">Not found</span>|<ul><li>We found a website https://www.baidu.com/search/rss.html that seems to describe the existence of rss functioning. However, upon clicking into the keyword search field, I kept being returned the same news in non-RSS format</li></ul>|
 |[Yahoo News](https://news.yahoo.com/rss)|News Channel|<span style="color:red">Not found</span>|<span style="color:red">Not found</span>|<span style="color:red">Not found</span>|<ul><li>Does not seem to allow keyword searches. If you do a yahoo search with news it automatically returns search.yahoo.com.</li><li>You can manipulate the [URL](https://news.search.yahoo.com/search;_ylt=A2KIbMuIVJpipzUAhiNXNyoA;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA3Nj?p={KEYWORD}&fr=news) to do news page sources, but it does not seem like they will convert it into an RSS format for us </li></ul>
 |[Yandex](https://yandex.com/)|Search Engine|<span style="color:red">Not found</span>|<span style="color:red">Not found</span>|<span style="color:red">Not found</span>|<ul><li>robots.txt disallows /company/*.rss, /company/search. Returns results in Russian?</li><li>Upon searching [sitemaps](https://yandex.com/support/sitemap.xml), found an rss source at [https://zen.yandex.ru/](https://zen.yandex.ru/search?query={0}). However, to subscribe to any of the feeds require signing in</li></ul>|
 |[Ask](https://www.ask.com/rss)|Search Engine|<span style="color:red">Not found</span>|<span style="color:green">Found</span>|<span style="color:red">Not found</span>|<ul><li> Found https://www.ask.com/rss, but so far haven't found a way to add a keyword. </li> <li> Looked through: https://www.ask.com/sitemap_index.xml and https://www.ask.com/robots.txt but did not find anything rss-related</li><li>Column _metadescription_ contains 2 sentences </ul>|
@@ -60,7 +60,7 @@ To find rss feeds, we looked towards some of the most popular search engines wit
 ---
 
 #### Example RSS Query
-Finding the Google offers the most comprehensive rss news query, we proceded with Google. Below, we include an example rss query to google:
+Finding the Google offers the most comprehensive rss news query, we proceeded with Google. Below, we include an example rss query to google:
 ```python
 https://news.google.com/rss/search?q={0}+after:{1}+before:{2}
 ```
@@ -121,7 +121,7 @@ Note the 100 article max that is associated with each keyword. To learn more abo
 [^5]: https://newscatcherapi.com/blog/google-news-rss-search-parameters-the-missing-documentaiton
 
 ### Comparison of severity
-We used a random sample of 500 URLs from the 9000 URLs we pulled from the most **rss-get** of the same afroementioned keywords list, and compared severity zero and severity one results.
+We used a random sample of 500 URLs from the 9000 URLs we pulled from the most **rss-get** of the same aforementioned keywords list, and compared severity zero and severity one results.
 
 |**Severity Level**|**Running Time**|**Articles/Second**|**Success Rate**|
 |--|--|--|--|
@@ -137,7 +137,7 @@ The main challenge we see with news source text extraction is how websites updat
 Based on our sample, we argue that the 4.2% success rate increase is not worth the penalty incurred on the running time. Furthermore, the move towards severity two source text extractions is hardly sustainable since news websites routinely update their source code which breaks site-specific modifications required to retrieve the information.
 
 ### The source data is timely and reproducible
-Text artifacts are rich data sources that effectively indicate innovation activity. With the rise of natural language models, the efficacy of news articles is only expected to grow. Creating an open-source toolkit can allow future government organizations and researchers to leverage previously unstructured data more efficiently without causing too much traffic to the main content hosting sites.
+Text artifacts are rich data sources that effectively indicate innovation activity. With the rise of natural language models, the efficacy of news articles as a data source is only expected to grow. Creating an open-source toolkit can allow future government organizations and researchers to leverage previously unstructured data more efficiently without causing too much traffic to the main content hosting sites.
 
 ### Going to Severity 2
 A higher severity level will give us more information, but also requires an increased amount of computing resources. Moreover, the universality of Severity 2 program makes another challenge. When facing additional protections, although we can optimize our code to target a few particular sites with a randomized header or a JavaScript tag, it is very difficult to construct an omnipotent program to handle all sites. Going forward, we might implement source-specific measures to retrieve articles from sites that are of particularly high value for the industry searched, but we will not be able to guarantee a 100% success rate for all sites.
