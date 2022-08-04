@@ -68,7 +68,7 @@ Where {0} is filled with the keyword, {1} is filled with end time, and {2} is fi
 [https://news.google.com/rss/search?q=Birth%20control%20pills%20+after:2017-01-01+before:2017-12-31](https://news.google.com/rss/search?q=Birth%20control%20pills%20+after:2017-01-01+before:2017-12-31)
 
 ### Source Text Extraction
-Once we found a rss-feed search the avails us keywords and snippets, we realized that the snippets we find are mostly 1-2 sentences, which is less than the 3 we hoped that would allow us to run the Natural Language Processing (NLP) more effectively. As a result, we started to investigate the retrieval of source text directly.
+Once we found a rss-feed search the avails us keywords and snippets, we realized that the snippets we find are mostly 1-2 sentences, which is not sufficient to  allow us to run the Natural Language Processing (NLP) effectively. As a result, we started to investigate the retrieval of source text directly.
 
 #### Severity Levels
 As we collected source text, we realized that news sources have a varying degree of "friendliness" to being scraped. In other words, some websites intentionally resist source text from being extracted. We introduced the concept of _severity_ to our system so that we can navigate spending more computational power in order to access these more difficult websites. 
