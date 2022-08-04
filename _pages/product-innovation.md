@@ -22,11 +22,12 @@ The National Center for Science and Engineering Statistics (NCSES), part of the 
 
 While ABS measures innovation incidence, i.e., the number of innovating firms, our aim is to test the feasibility of developing methods using non-traditional data to obtain richer and complementary innovation measures [^1], and as part of this, we investigated cthe use of opportunity data on the web. While accessing websites individually as humans is easy, we found it non-trivial to automate news-text extraction in a free and open-source way. Consequently, we contribute this summer by creating an example framework for researchers to extract news text.
 
-##Product Innovation : Defined
+## Product Innovation : Defined
 In order to decide whether a news article is actually innovation related or not, we must first define what we mean by product innovation.
 For this, we use the definition contained within the Oslo Manual
 
 <img src="../assets/img/oslo-manual-2018.jpg" width="400">
+
 >Product Innovation Definition - As per the Oslo Manual 2018
 Guidelines for Collecting, Reporting and Using Data on Innovation, 4th Edition
 >>“ A product innovation is a new or improved good or service that differs significantly from the firm’s previous goods or services and that has been made available to potential users. “
