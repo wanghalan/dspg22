@@ -38,14 +38,15 @@ We analyzed data sources in each calculator and conducted comparative studies in
 <center>
 <div class="row">
     <div class="container">
-        <img src="../assets/img/calculator_methods.png" alt="process" style="float: center; width: 60%; margin-right: 1%; margin-bottom: 0.5em;">
+        <img src="../assets/img/calculator_methods.svg" alt="process" style="float: center; width: 60%; margin-right: 1%; margin-bottom: 0.5em;">
     </div>
     <div class="container">
-        <img src="../assets/img/calculator_midterm_sources.png" alt="sources" style="float: center; width: 60%; margin-right: 1%; margin-bottom: 0.5em;">
+        <img src="../assets/img/calculator_midterm_sources.svg" alt="sources" style="float: center; width: 60%; margin-right: 1%; margin-bottom: 0.5em;">
     </div>
 </div>
 <div style="clear:both;"></div>
 </center>
+
 
 
 ### Our Sources
