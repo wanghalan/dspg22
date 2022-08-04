@@ -25,7 +25,8 @@ While ABS measures innovation incidence, i.e., the number of innovating firms, o
 ##Product Innovation : Defined
 In order to decide whether a news article is actually innovation related or not, we must first define what we mean by product innovation.
 For this, we use the definition contained within the Oslo Manual
-![Oslo Manual](../assets/img/oslo-manual-2018.jpg)
+
+<img src="../assets/img/oslo-manual-2018.jpg" width="400">
 >Product Innovation Definition - As per the Oslo Manual 2018
 Guidelines for Collecting, Reporting and Using Data on Innovation, 4th Edition
 >>“ A product innovation is a new or improved good or service that differs significantly from the firm’s previous goods or services and that has been made available to potential users. “
