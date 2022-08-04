@@ -113,7 +113,128 @@ We used a random sample of 500 URLs from the 9000 URLs we pulled from the most *
 1 | 07:22 |2.47| 92.4% |
 ---
 We did not attempt to do any severity 2 activities to bypass the security put up by the found websites.
+<script src="https://d3js.org/d3.v4.js"></script>
 
+<!-- Create a div where the graph will take place -->
+	<h3> Pharmaceutical articles sample for 2017</h3>
+<div id="my_dataviz">
+	 <svg width="960" height="500"></svg>
+	</div>
+	
+	<h5> Article links in this visualization have been sourced from the Google News RSS Feed system. We take no responsibility for the content of the articles</h5>
+
+<script>
+
+      const xValue = d => d.Pub_Date;
+      const xLabel = 'Time';
+      const yValue = d => d['Unnamed: 0'];
+      const yLabel = 'Article_ID';
+      const margin = { left: 120, right: 30, top: 20, bottom: 120 };
+
+      const svg = d3.select('svg');
+      const width = svg.attr('width');
+      const height = svg.attr('height');
+      const innerWidth = width - margin.left - margin.right;
+      const innerHeight = height - margin.top - margin.bottom;
+
+      const g = svg.append('g')
+          .attr('transform', `translate(${margin.left},${margin.top})`);
+      const xAxisG = g.append('g')
+          .attr('transform', `translate(0, ${innerHeight})`);
+      const yAxisG = g.append('g');
+
+      xAxisG.append('text')
+          .attr('class', 'axis-label')
+          .attr('x', innerWidth / 2)
+          .attr('y', 100)
+          .text(xLabel);
+
+      yAxisG.append('text')
+          .attr('class', 'axis-label')
+          .attr('x', -innerHeight / 2)
+          .attr('y', -60)
+          .attr('transform', `rotate(-90)`)
+          .style('text-anchor', 'middle')
+          .text(yLabel);
+
+      const xScale = d3.scaleTime();
+      const yScale = d3.scaleLinear();
+
+      const xAxis = d3.axisBottom()
+        .scale(xScale)
+        .tickPadding(15)
+        .tickSize(-innerHeight);
+
+      const yAxis = d3.axisLeft()
+        .scale(yScale)
+        .ticks(5)
+        .tickPadding(15)
+        .tickSize(-innerWidth);
+
+      const row = d => {
+        d.Pub_Date = new Date(d.Pub_Date);
+        d['Unnamed: 0'] = +d['Unnamed: 0'];
+        return d;
+      };
+
+      d3.csv('display_rss_articles.csv', row, data => {
+        xScale
+          .domain(d3.extent(data, xValue))
+          .range([0, innerWidth])
+          .nice();
+
+        yScale
+          .domain(d3.extent(data, yValue))
+          .range([innerHeight, 0])
+          .nice();
+
+        g.selectAll('circle').data(data)
+          .enter().append('svg:a').attr("xlink:href", function(d){return d.link;}).append('circle')
+            .attr('cx', d => xScale(xValue(d)))
+            .attr('cy', d => yScale(yValue(d)))  
+            .attr('fill-opacity', 0.6)
+	    .style("fill", "#f2b980")
+            .attr('r', 8).on("mouseover", mouseover ).on("mousemove", mousemove ).on("mouseleave", mouseleave );
+
+        xAxisG.call(xAxis);
+        yAxisG.call(yAxis);
+      });
+ 
+  // Add a tooltip div. Here I define the general feature of the tooltip: stuff that do not depend on the data point.
+  // Its opacity is set to 0: we don't see it by default.
+  var tooltip = d3.select("#my_dataviz").append("div")
+    .style("opacity", 0)
+    .attr("class", "tooltip")
+    .style("background-color", "white")
+    .style("border", "solid")
+    .style("border-width", "1px")
+    .style("border-radius", "5px")
+    .style("padding", "10px")
+
+
+
+  // A function that change this tooltip when the user hover a point.
+  // Its opacity is set to 1: we can now see it. Plus it set the text and position of tooltip depending on the datapoint (d)
+  var mouseover = function(d) {
+    tooltip
+      .style("opacity", 1)
+  }
+
+  var mousemove = function(d) {
+    tooltip
+      .html("Title: " + d.title)
+      .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+      .style("top", (d3.mouse(this)[1]) + "px")
+  }
+
+  // A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
+  var mouseleave = function(d) {
+    tooltip
+      .transition()
+      .duration(200)
+      .style("opacity", 0)
+  }
+	</script>
 ## Discussions
 The main challenge we see with news source text extraction is how websites update their source code rapidly. As new vulnerability arises on the web, so do the defense measures taken to limit the survey of websites from robots. We identify the following key areas as the upsides of complementing survey data with news data.
 
