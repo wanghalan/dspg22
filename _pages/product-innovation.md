@@ -20,7 +20,7 @@ The goal of our project was to explore the feasibility of complementing the [Ann
 
 The National Center for Science and Engineering Statistics (NCSES), part of the National Science Foundation (NSF) conducts the Annual Business Survey to collect data on R&D, innovation, technology, intellectual property, and business owner characteristics. This information was previously collected through the Business R&D Innovation Survey (BRDIS)
 
-While ABS measures innovation incidence, i.e., the number of innovating firms, our aim is to test the feasibility of developing methods using non-traditional data to obtain richer and complementary innovation measures [^1], and as part of this, we investigated cthe use of opportunity data on the web. While accessing websites individually as humans is easy, we found it non-trivial to automate news-text extraction in a free and open-source way. Consequently, we contribute this summer by creating an example framework for researchers to extract news text.
+While ABS measures innovation incidence, i.e., the number of innovating firms, our aim is to test the feasibility of developing methods using non-traditional data to obtain richer and complementary innovation measures [^1], and as part of this, we investigated the use of opportunity data on the web. While accessing websites individually as humans is easy, we found it non-trivial to automate news-text extraction in a free and open-source way. Consequently, we contribute this summer by creating an example framework for researchers to extract news text.
 
 ## Product Innovation : Defined
 In order to decide whether a news article is actually innovation related or not, we must first define what we mean by product innovation.
