@@ -113,7 +113,7 @@ We used a random sample of 500 URLs from the 9000 URLs we pulled from the most *
 1 | 07:22 |2.47| 92.4% |
 ---
 We did not attempt to do any severity 2 activities to bypass the security put up by the found websites.
-<iframe src="https://thomasneil.github.io/random-graph-generator/test" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+[You can view a sample of articles we have been able to extract here](https://thomasneil.github.io/random-graph-generator/test)
 ## Discussions
 The main challenge we see with news source text extraction is how websites update their source code rapidly. As new vulnerability arises on the web, so do the defense measures taken to limit the survey of websites from robots. We identify the following key areas as the upsides of complementing survey data with news data.
 
