@@ -1,6 +1,6 @@
 ---
 permalink: /product-innovation/
-title: Product Innovation : Extracting Opportunity Data from the Web, to support Open Source text analysis for measuring Product Innovation
+title: Product Innovation - Extracting Opportunity Data from the Web, to support Open Source text analysis for measuring Product Innovation
 identifier: "dspg22" 
 toc: true
 toc_label: Product Innovation
