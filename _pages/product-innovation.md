@@ -125,8 +125,8 @@ We used a random sample of 500 URLs from the 9000 URLs we pulled from the most *
 
 |**Severity Level**|**Running Time**|**Articles/Second**|**Success Rate**|
 |--|--|--|--|
-0 | 03:02 |1.13| 88.2% |
-1 | 07:22 |2.47| 92.4% |
+0 | 03:02 |2.47| 88.2% |
+1 | 07:22 |1.13| 92.4% |
 ---
 We did not attempt to do any severity 2 activities to bypass the security put up by the found websites.
 [You can view a sample of articles we have been able to extract here](https://thomasneil.github.io/random-graph-generator/test)
