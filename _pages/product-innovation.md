@@ -24,7 +24,8 @@ While ABS measures innovation incidence, i.e., the number of innovating firms, o
 
 ## Product Innovation : Defined
 In order to decide whether a news article is actually innovation related or not, we must first define what we mean by product innovation.
-For this, we use the definition contained within the Oslo Manual
+For this, we use the definition contained within the Oslo Manual.
+
 First published in 1992, the [Oslo Manual](https://www.oecd.org/science/oslo-manual-2018-9789264304604-en.htm) is the international reference guide for collecting and using data on innovation, published by the [Organization for Economic Cooperation and Development (OECD)](https://www.oecd.org/)
 
 <img src="../assets/img/oslo-manual-2018.jpg" width="400">
